@@ -16,40 +16,33 @@ const Footer = () => {
 
   const projects = [
     {
-      title: 'Computer Vision',
-      description: 'Exploring advanced computer vision techniques.',
+      title: 'Interaction',
       details: {
-        name: 'Computer Vision',
-        technology: 'Python, TensorFlow, OpenCV',
-        objectives: 'Develop models for image detection and classification in retail products.',
+        title: 'Interaction',
+        objectives: 'The chatbot provides a friendly and natural conversational interface, allowing users to ask about products, explore different categories, and receive recommendations based on their preferences and shopping habits.',
       },
     },
     {
-      title: 'Product Association Rules',
-      description: 'Analyzing large datasets to gain insights into customer consumption patterns.',
+      title: 'Data Generation through Interaction',
       details: {
-        name: 'Product Association Rules',
-        technology: 'Python, Pandas, Matplotlib',
-        objectives: 'Analyze data to make strategic decisions about products offered to customers.',
+        title: 'Data Generation through Interaction',
+        objectives: 'The chatbot analyzes users, questions and answers, preferences, and shopping patterns. This data will be used to improve recommendations, offer more suitable products, and generate consumption profiles for partner businesses.',
       },
     },
     {
-      title: 'Customer Segmentation',
-      description: 'Classification of customer segments based on customer profiles.',
+      title: 'Promotions',
       details: {
-        name: 'Customer Segmentation Project',
-        technology: 'Python, Pandas, Matplotlib, Numpy',
-        objectives: 'Classify customers into clusters based on purchasing behavior.',
+        title: 'Promotions',
+        objectives: 'Partner businesses will be able to launch promotional campaigns through the chatbot. The promotions will be personalized and presented based on the users previous interests and shopping behaviors, maximizing the likelihood of conversion.',
       },
     },
     {
-      title: 'Employee Allocation to Stores Project',
-      description: 'Recommendation of staff allocations for retail stores.',
+      title: 'Personalized Recommendations',
       details: {
-        name: 'Employee Allocation to Stores Project',
-        technology: 'Python, Pandas, Matplotlib, Numpy, Databricks, PySpark, PostgreSQL, Azure',
-        objectives: 'Determine optimal staff allocation to retail stores based on sales needs.',
+        title: 'Personalized Recommendations',
+        objectives: 'Based on interaction and purchase history, the chatbot offers specific product recommendations that might interest the user. These recommendations will be optimized through an artificial intelligence system that learns from each interaction.',
       },
+    
     },
   ];
 
@@ -83,7 +76,7 @@ const Footer = () => {
         <div className="modal-overlay">
           <div className="modal-content">
             <h2>{activeProject.details.name}</h2>
-            <p><strong>Technology:</strong> {activeProject.details.technology}</p>
+            <p><strong>Title:</strong> {activeProject.details.title}</p>
             <p><strong>Objectives:</strong> {activeProject.details.objectives}</p>
             <button className="close-button" onClick={closeModal}>
               Cerrar
@@ -91,6 +84,8 @@ const Footer = () => {
           </div>
         </div>
       )}
+      <div>
+      </div>
     </div>
   );
 };

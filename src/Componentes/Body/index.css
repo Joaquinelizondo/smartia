@@ -1,7 +1,10 @@
-/* Base styles */
+* {
+  box-sizing: border-box;
+}
+
 .body {
   margin-top: 10vw;
-  background-color: rgb(20, 11, 98);
+  background-color: aquamarine;
   width: 100%;
   height: auto;
   padding: 5vw;
@@ -14,13 +17,14 @@
 }
 
 .profile-image {
-  width: 15vw; /* Tamaño más grande en pantallas grandes */
-  max-width: 200px; /* Aumenta el tamaño máximo */
-  height: auto;
-  border-radius: 50%;
+  width: 40vw; /* Tamaño más grande en pantallas grandes */
+  /* max-width: 200px; Aumenta el tamaño máximo */
+  height: 12vw;
+  border-radius: 30%;
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
+  background-color: white;
 }
 
 .profile-image:hover {
@@ -35,6 +39,7 @@
   transition: opacity 0.6s ease, transform 0.6s ease;
   color: white;
   font-size: 6vw; /* Escala relativa */
+  color: black;
 }
 
 .title.fade-in {

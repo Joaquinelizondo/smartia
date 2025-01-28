@@ -4,8 +4,8 @@ import './index.css';
 const Header = () => {
   const [title, setTitle] = useState('');
   const [subtitle, setSubtitle] = useState('');
-  const fullTitle = 'I am Joaquin Elizondo';
-  const fullSubtitle = 'Data Scientist / Machine Learning Engineer';
+  const fullTitle = 'Smartialab';
+  const fullSubtitle = 'Artificial Intelligence to Transform Your Business';
 
   useEffect(() => {
     let titleIndex = 0;

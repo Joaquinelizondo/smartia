@@ -14,6 +14,7 @@
     align-items: center;
     margin-top: 10vw; /* Reducir espacio superior */
     flex-direction: column; /* Alineación vertical */
+    
   }
   
   h1 {
