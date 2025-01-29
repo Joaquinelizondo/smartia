@@ -14,7 +14,6 @@ import {
 } from 'react-icons/si';
 import { FaFileExcel } from 'react-icons/fa';
 
-/* Hook optimizado para múltiples referencias */
 const useIntersectionFadeIn = (refs) => {
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -40,85 +39,76 @@ const useIntersectionFadeIn = (refs) => {
   }, [refs]);
 };
 
+const ContentBox = ({ title, content }) => {
+  const ref = useRef(null);
+  useIntersectionFadeIn([ref]);
+
+  return (
+    <div className="body1">
+      <div className="content-box" ref={ref} style={{ fontFamily: 'Lato, sans-serif' }}>
+        <h2 className="section-title">{title}</h2>
+        <ul className="spaced-list">
+          {content.map((item, index) => (
+            <li key={index} className="list-item">
+              <span className="list-title">{item.title}:</span> <span className="list-description">{item.description}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+};
+
 const Body = () => {
   const aboutTitleRef = useRef(null);
-  const aboutContentRef = useRef(null);
   const techIconsRef = useRef(null);
 
-  useIntersectionFadeIn([aboutTitleRef, aboutContentRef, techIconsRef]);
+  useIntersectionFadeIn([aboutTitleRef, techIconsRef]);
+
+  const sections = [
+    {
+      title: 'Competitive Advantages',
+      content: [
+        { title: 'Personalized Experience', description: 'The chatbot learns from interactions to provide tailored recommendations and promotions for each customer.' },
+        { title: 'Ease of Use', description: 'Simplifies the purchase process, making it faster and more accessible.' },
+        { title: 'Value for Businesses', description: 'Optimizes marketing strategies, pricing, and provides valuable customer insights.' },
+      ],
+    },
+    {
+      title: 'Growth Strategy',
+      content: [
+        { title: 'Onboarding New Businesses', description: 'Partnering with small businesses initially and later with large brands to expand the product offering.' },
+        { title: 'Targeted Marketing Campaigns', description: 'Segmented advertising based on user behavior data.' },
+        { title: 'International Expansion', description: 'After consolidating in the local market, adapt to growing international ecommerce markets.' },
+      ],
+    },
+    {
+      title: 'Required Technologies',
+      content: [
+        { title: 'Artificial Intelligence', description: 'For personalization.' },
+        { title: 'Natural Language Processing (NLP)', description: 'For seamless interactions.' },
+        { title: 'Data Analysis', description: 'For insights and optimization.' },
+        { title: 'Integration with Payment Systems', description: 'For secure and efficient transactions.' },
+      ],
+    },
+  ];
 
   return (
     <section className="body">
-      {/* Profile Image */}
       <div className="profile">
         <img src={profileImage} alt="Profile" className="profile-image" />
       </div>
 
-      {/* Title Section */}
-      <div className="title" ref={aboutTitleRef}>
+      <div className="title" ref={aboutTitleRef} style={{ fontFamily: 'Lato, sans-serif' }}>
         <h1>About Us</h1>
       </div>
 
-      {/* About Content */}
-      <div className="body1">
-      <div className="content-box" ref={aboutContentRef}>
-  <p>
-    <strong>Competitive Advantages:</strong>
-  </p>
-  <ul>
-    <li>
-      <strong>Personalized Experience:</strong> The chatbot learns from
-      interactions to provide tailored recommendations and promotions for
-      each customer.
-    </li>
-    <li>
-      <strong>Ease of Use:</strong> Simplifies the purchase process, making it
-      faster and more accessible.
-    </li>
-    <li>
-      <strong>Value for Businesses:</strong> Optimizes marketing strategies,
-      pricing, and provides valuable customer insights.
-    </li>
-  </ul>
+      {sections.map((section, index) => (
+        <ContentBox key={index} title={section.title} content={section.content} />
+      ))}
 
-  <p>
-    <strong>Growth Strategy:</strong>
-  </p>
-  <ul>
-    <li>
-      <strong>Onboarding New Businesses:</strong> Partnering with small
-      businesses initially and later with large brands to expand the product
-      offering.
-    </li>
-    <li>
-      <strong>Targeted Marketing Campaigns:</strong> Segmented advertising
-      based on user behavior data.
-    </li>
-    <li>
-      <strong>International Expansion:</strong> After consolidating in the
-      local market, adapt to growing international ecommerce markets.
-    </li>
-  </ul>
-
-  <p>
-    <strong>Required Technologies:</strong>
-  </p>
-  <ul>
-    <li>Artificial intelligence for personalization.</li>
-    <li>
-      Natural Language Processing (NLP) for seamless interactions.
-    </li>
-    <li>Data analysis for insights and optimization.</li>
-    <li>Integration with payment gateways and ecommerce systems.</li>
-  </ul>
-</div>
-
-
-      </div>
-
-      {/* Technologies Section */}
       <div className="tech-icons" ref={techIconsRef}>
-        <h2 className="tech-title">Technologies We Use</h2>
+        <h2 className="tech-title" style={{ fontFamily: 'Lato, sans-serif' }}>Technologies We Use</h2>
         <div className="icons-container">
           <SiPython title="Python" />
           <SiPandas title="Pandas" />

@@ -1,15 +1,23 @@
+/* Reset de estilos */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
 }
 
+/* Estilo del cuerpo principal */
 .body {
-  margin-top: 10vw;
   background-color: aquamarine;
   width: 100%;
-  height: auto;
+  min-height: 100vh;
   padding: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Imagen de perfil */
 .profile {
   display: flex;
   justify-content: center;
@@ -17,13 +25,13 @@
 }
 
 .profile-image {
-  width: 40vw; /* Tamaño más grande en pantallas grandes */
-  /* max-width: 200px; Aumenta el tamaño máximo */
-  height: 12vw;
-  border-radius: 30%;
+  width: 70vw;
+  height: 10vw;
+  max-width: 300px;
+  border-radius: 10%;
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
   background-color: white;
 }
 
@@ -31,15 +39,17 @@
   transform: scale(1.05);
 }
 
+/* Títulos mejorados */
 .title {
   text-align: center;
   margin-bottom: 2vw;
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.6s ease, transform 0.6s ease;
+  font-size: 7vw;
+  font-weight: bold;
   color: white;
-  font-size: 6vw; /* Escala relativa */
-  color: black;
+  margin-top: 3vw;
 }
 
 .title.fade-in {
@@ -47,12 +57,15 @@
   transform: translateY(0);
 }
 
+/* Contenedor del contenido */
 .body1 {
   display: flex;
   justify-content: center;
-  padding: 0 5vw;
+  padding: 0 2vw;
+  width: 100%;
 }
 
+/* Caja de contenido con mejor presentación */
 .content-box {
   background-color: white;
   border-radius: 15px;
@@ -60,9 +73,11 @@
   max-width: 800px;
   width: 100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.6s ease, transform 0.6s ease;
+  margin-top: 2vw;
 }
 
 .content-box.fade-in {
@@ -70,22 +85,68 @@
   transform: translateY(0);
 }
 
-p {
-  color: rgb(20, 11, 98);
-  margin: 0 0 15px 0;
-  line-height: 1.6;
-  font-size: 1rem;
+/* Estilo mejorado para títulos de sección */
+.section-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #1e3c72;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-ul {
-  margin-left: 20px;
-  color: rgb(20, 11, 98);
+.section-title svg {
+  color: #ff9800;
+  font-size: 2.5rem;
 }
 
-li {
-  margin-bottom: 10px;
+/* Listas bien estructuradas */
+.content-box ul {
+  margin-top: 1vw;
+  list-style: none;
+  padding: 0;
+  color: #142368;
 }
 
+.content-box li {
+  margin-bottom: 1.2rem;
+  font-size: 1.3rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.content-box li svg {
+  color: #1e88e5;
+  font-size: 1.5rem;
+}
+
+/* Espaciado entre título y contenido */
+.list-item {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1e3c72;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.list-description {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Sección de iconos de tecnologías */
 .tech-icons {
   text-align: center;
   margin-top: 3vw;
@@ -94,7 +155,7 @@ li {
 .tech-title {
   color: white;
   margin-bottom: 2vw;
-  font-size: 4vw;
+  font-size: 3.5vw;
 }
 
 .icons-container {
@@ -105,35 +166,43 @@ li {
 }
 
 .icons-container svg {
-  width: 10vw; /* Tamaño relativo */
-  max-width: 50px; /* Limita el tamaño máximo */
+  width: 10vw;
+  max-width: 55px;
   height: auto;
   color: white;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .icons-container svg:hover {
-  transform: scale(1.1);
-  color: rgb(220, 220, 255);
+  transform: scale(1.15);
+  color: #1e3c72;
 }
 
-/* Media Queries para diseño responsive */
+/* Media Queries para diseño responsivo */
 @media (max-width: 768px) {
   .body {
     padding: 5vw 3vw;
   }
 
   .profile-image {
-    width: 25vw; /* Más grande en tablets */
-    max-width: 150px; /* Limita el tamaño máximo */
+    width: 30vw;
+    max-width: 170px;
   }
 
   .title {
-    font-size: 5vw; /* Ajustar título */
+    font-size: 6vw;
   }
 
   .content-box {
     padding: 5vw;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .content-box li {
+    font-size: 1.2rem;
   }
 
   .tech-title {
@@ -141,8 +210,8 @@ li {
   }
 
   .icons-container svg {
-    width: 12vw; /* Más grandes en tablets */
-    max-width: 40px;
+    width: 12vw;
+    max-width: 45px;
   }
 }
 
@@ -152,16 +221,24 @@ li {
   }
 
   .profile-image {
-    width: 30vw; /* Más grande en móviles */
-    max-width: 120px; /* Limita el tamaño máximo */
+    width: 35vw;
+    max-width: 140px;
   }
 
   .title {
-    font-size: 4.5vw; /* Ajustar tamaño del título */
+    font-size: 5vw;
   }
 
   .content-box {
     padding: 6vw;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .content-box li {
+    font-size: 1.1rem;
   }
 
   .tech-title {
@@ -169,7 +246,7 @@ li {
   }
 
   .icons-container svg {
-    width: 15vw; /* Íconos más grandes */
-    max-width: 30px;
+    width: 15vw;
+    max-width: 40px;
   }
 }
