@@ -23,28 +23,28 @@ const Foot = () => {
             >
               <i className="fab fa-linkedin"></i>
             </a>
-            <a
+             {/* <a
               href="https://github.com/joaquinelizondo"
               target="_blank"
               rel="noopener noreferrer"
               className="social-link"
             >
               <i className="fab fa-github"></i>
-            </a>
+            </a>  */}
             {/* <a
               href="https://twitter.com/joaquinelizondo"
               target="_blank"
               rel="noopener noreferrer"
               className="social-link"
-            > */}
-              <i className="fab fa-twitter"></i>
-            </a>
+            > 
+             <i className="fab fa-twitter"></i>
+            </a> */}
             <a
-              href="https://instagram.com/joaquinelizondo"
+              href="https://instagram.com/smartialab"
               target="_blank"
               rel="noopener noreferrer"
               className="social-link"
-            >
+            > 
               <i className="fab fa-instagram"></i>
             </a>
           </div>
