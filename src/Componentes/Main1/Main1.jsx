@@ -7,9 +7,7 @@ const Main1 = () => {
     <div className="container">
       {/* 📌 Imagen en el lado izquierdo */}
       <div className="image-container">
-        <img src="/smartia.png" alt="Smartia logo" className="profile-image1" />
-
-      
+      <img src="/foto_main.jpg" alt="Descripción" />
 
       </div>
 
