@@ -1,0 +1,114 @@
+.solutions-container {
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 40px 5vw;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #343a40;
+  margin-bottom: 30px;
+}
+
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+
+
+.solution-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.solution-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.solution-box h5 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.solution-box p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* 🔹 Estilos para la sección Our Customers */
+.customer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 20%;
+}
+
+.customer-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.customer-logo {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .solutions-container {
+    padding: 30px 3vw;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .solution-box {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .customer-logo {
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .customer-logo {
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .solutions-container {
+    padding: 20px 2vw;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .solution-box h5 {
+    font-size: 1.3rem;
+  }
+
+  .solution-box p {
+    font-size: 0.9rem;
+  }
+}

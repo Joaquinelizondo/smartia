@@ -1,0 +1,263 @@
+/* 🔹 Reset de estilos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🔹 Estilo del cuerpo principal */
+.body {
+    background-color: aquamarine;
+    width: 100%;
+    min-height: 100vh;
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 🔹 Imagen de perfil */
+.profile {
+    display: flex;
+    justify-content: center;
+
+}
+
+.profile-image {
+    width: 40vw;
+    height: 20vw;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    background-color: aquamarine;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+/* 🔹 Títulos mejorados */
+.title {
+    text-align: center;
+    margin-bottom: 2vw;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    font-size: 7vw;
+    font-weight: bold;
+    color: white;
+ 
+}
+
+
+.title.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 🔹 Contenedor del contenido */
+.body1 {
+    display: flex;
+    justify-content: center;
+    padding: 0 2vw;
+    width: 100%;
+}
+
+/* 🔹 Caja de contenido con mejor presentación */
+.content-box {
+    position: relative;
+    padding: 60px 20px 30px; /* Más espacio arriba para el icono */
+    background-color: white;
+    border-radius: 15px;
+    max-width: 800px;
+    width: 120%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    margin-top: 2vw;
+}
+
+.content-box.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 🔹 Icono dentro del box */
+.icon-container {
+    position: absolute; /* Posición absoluta dentro de la caja */
+    top: 10px;  /* Ajuste superior */
+    left: 10px; /* Pegado a la izquierda */
+}
+
+.icon-inside-box {
+    width: 100px; /* Tamaño más grande */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* 🔹 Estilo mejorado para títulos de sección */
+.section-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #1e3c72;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-title svg {
+    color: #ff9800;
+    font-size: 2.5rem;
+}
+
+/* 🔹 Listas bien estructuradas */
+.content-box ul {
+    margin-top: 1vw;
+    list-style: none;
+    padding: 0;
+    color: #142368;
+}
+
+.content-box li {
+    margin-bottom: 1.2rem;
+    font-size: 1.3rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.content-box li svg {
+    color: #1e88e5;
+    font-size: 1.5rem;
+}
+
+/* 🔹 Espaciado entre título y contenido */
+.list-item {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #1e3c72;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.list-description {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* 🔹 Sección de iconos de tecnologías */
+.tech-icons {
+    text-align: center;
+    margin-top: 3vw;
+}
+
+.tech-title {
+    color: white;
+    margin-bottom: 2vw;
+    font-size: 3.5vw;
+}
+
+.icons-container svg {
+    width: 15vw;
+    max-width: 70px;
+    height: auto;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icons-container svg:hover {
+    transform: scale(1.15);
+    color: #1e3c72;
+}
+
+/* 🔹 Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+    .body {
+        padding: 5vw 3vw;
+    }
+
+    .profile-image {
+        width: 40vw;
+        /* max-width: 170px; */
+    }
+
+    .title {
+        font-size: 6vw;
+    }
+
+    .content-box {
+        padding: 5vw;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .content-box li {
+        font-size: 1.2rem;
+    }
+
+    .tech-title {
+        font-size: 5vw;
+    }
+
+    .icons-container svg {
+        width: 12vw;
+        max-width: 45px;
+    }
+
+    .icon-inside-box {
+        width: 80px; /* Ajuste del icono para pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .body {
+        padding: 4vw 2vw;
+    }
+
+    .profile-image {
+        width: 35vw;
+        max-width: 140px;
+    }
+
+    .title {
+        font-size: 4vw;
+    }
+
+    .content-box {
+        padding: 6vw;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .content-box li {
+        font-size: 1.1rem;
+    }
+
+    .tech-title {
+        font-size: 4vw;
+    }
+
+    .icons-container svg {
+        width: 15vw;
+        max-width: 40px;
+    }
+
+    .icon-inside-box {
+        width: 70px; /* Ajuste para pantallas más pequeñas */
+    }
+}
