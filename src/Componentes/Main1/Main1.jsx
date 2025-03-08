@@ -1,12 +1,13 @@
 import React from 'react';
 import './index.css'
+import icono from "../../assets/foto_main.jpg";
 
 const Main1 = () => {
   return (
     <div className="container">
       {/* 📌 Imagen en el lado izquierdo */}
       <div className="image-container">
-        <img src="/foto_main.jpg" alt="Descripción" />
+        <img src={icono} alt="Descripción" />
       </div>
 
       {/* 📌 Texto en el lado derecho */}
