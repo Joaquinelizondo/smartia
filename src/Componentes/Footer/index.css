@@ -1,150 +1,148 @@
-
+/* 🔹 Footer General */
 .dark-footer {
-    background-color: rgb(55, 55, 116); /* Fondo oscuro */
-    color: white; /* Texto blanco */
-    padding: 20px 5vw;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-  }
+  background-color: rgb(55, 55, 116);
+  color: white;
+  padding: 20px 5vw;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
 
-  .icon {
-    color: white !important;
-  }
-  
+/* 🔹 Iconos Sociales */
+.icon {
+  color: white !important;
+}
+
+.social-icons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  font-size: 2.5vw;
+}
+
+.social-icons a {
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  color: #007bff;
+}
+
+/* 🔹 Contenido del Footer */
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  gap: 15px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  color: #f5f5f5;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.footer-section p {
+  margin: 8px 0;
+  color: #d3d3d3;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* 🔹 Imagen del Footer */
+.footer-image-container {
+  margin-top: -3vw;
+  text-align: center;
+}
+
+.profile-image1 {
+  width: 200px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.profile-image1:hover {
+  transform: scale(1.1);
+}
+
+/* 🔹 Parte Inferior del Footer */
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 10px;
+  padding-top: 5px;
+}
+
+.footer-bottom p {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
   .footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 10px 0; /* Espacio reducido para compactar */
-    gap: 15px; /* Menor espacio entre las secciones */
-  }
-  
-  .footer-section {
-    flex: 1;
-    margin: 5px; /* Menor espacio entre secciones */
-    min-width: 250px;
-    max-width: 400px;
-    text-align: center;
-  }
-  
-  .footer-section h3 {
-    margin-bottom: 10px; /* Reduce espacio inferior */
-    color: #f5f5f5;
-    border-bottom: 2px solid #007bff;
-    display: inline-block;
-    padding-bottom: 5px;
-    font-size: 1.2rem;
-  }
-  
-  .footer-section p {
-    margin: 8px 0; /* Reduce espacio entre párrafos */
-    color: #d3d3d3;
-    line-height: 1.6;
-    font-size: 1rem;
-  }
-  
-  .social-icons {
-    display: flex;
-    gap: 8px; /* Reduce espacio entre íconos */
-    justify-content: center;
-    color: white !important;
-    font-size: 2.5vw;
-  }
-  
-  .social-link {
-    color: white !important;
-    font-size: 2rem;
-    transition: color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .social-link:hover {
-    color: #007bff;
-    transform: scale(1.1);
-  }
-  
-  .footer-image-container {
-    margin-top: -5vw; /* Reduce espacio superior */
-    text-align: center;
-  }
-  
-  .profile-image1 {
-    width: 250px; /* Tamaño del logo ajustado */
-    height: auto;
-    margin: 0; /* Elimina márgenes adicionales */
-    transition: transform 0.3s ease;
-  }
-  
-  .profile-image1:hover {
-    transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
-  }
-  
-  .footer-bottom {
-    border-top: 1px solid #333;
-    margin-top: 5px; /* Espacio reducido entre contenido y borde inferior */
-    padding-top: 5px;
-  }
-  
-  .footer-bottom p {
-    color: #888;
-    font-size: 0.9rem;
-    margin: 0; /* Elimina márgenes adicionales */
-  }
-  
-  /* Media Queries for Responsive Design */
-  @media (max-width: 768px) {
-    .footer-content {
       flex-direction: column;
       align-items: center;
-      gap: 20px; /* Ajuste para pantallas pequeñas */
+      gap: 20px;
       text-align: center;
-    }
-  
-    .footer-section {
+  }
+
+  .footer-section {
       min-width: 90%;
       max-width: none;
-    }
-  
-    .footer-section h3 {
-      font-size: 1.1rem;
-    }
-  
-    .footer-section p {
-      font-size: 0.9rem;
-    }
-  
-    .social-icons {
-      gap: 10px;
-    }
-  
-    .social-link {
-      font-size: 1.3rem;
-    }
   }
-  
-  @media (max-width: 480px) {
-    .footer-content {
+
+  .footer-section h3 {
+      font-size: 1.1rem;
+  }
+
+  .footer-section p {
+      font-size: 0.9rem;
+  }
+
+  .social-icons {
+      gap: 10px;
+  }
+
+  .profile-image1 {
+      width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
       padding: 10px 0;
-    }
-  
-    .footer-section {
+  }
+
+  .footer-section {
       margin: 5px 0;
       text-align: center;
-    }
-  
-    .footer-section h3 {
-      font-size: 1rem;
-    }
-  
-    .footer-section p {
-      font-size: 0.8rem;
-    }
-  
-    .social-link {
-      font-size: 1.2rem;
-    }
-  
-    .footer-bottom p {
-      font-size: 0.8rem;
-    }
   }
-  
+
+  .footer-section h3 {
+      font-size: 1rem;
+  }
+
+  .footer-section p {
+      font-size: 0.8rem;
+  }
+
+  .profile-image1 {
+      width: 160px;
+  }
+
+  .footer-bottom p {
+      font-size: 0.8rem;
+  }
+}

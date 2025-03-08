@@ -1,8 +1,6 @@
 import React from 'react';
 import { FaLinkedin, FaInstagram, FaGithub, FaTwitter } from 'react-icons/fa';
 import './index.css';
-import profileImage1 from '../../assets/smartia.png';
-
 
 const Footer = () => {
   return (
@@ -21,12 +19,6 @@ const Footer = () => {
             <a href="https://www.linkedin.com/company/96257599/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="icon" />
             </a>
-            {/* <a href="" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="icon" />
-            </a>
-            <a href="" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="icon" />
-            </a> */}
             <a href="https://instagram.com/smartialab" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="icon" />
             </a>
@@ -38,11 +30,6 @@ const Footer = () => {
           <p>Email: info@smartialab.com</p>
           <p>Phone: +598 99 213 300</p>
         </div>
-      </div>
-
-      {/* Imagen debajo de los tres elementos */}
-      <div className="footer-image-container">
-        <img src={profileImage1} alt="Smartia logo" className="profile-image1" />
       </div>
 
       <div className="footer-bottom">

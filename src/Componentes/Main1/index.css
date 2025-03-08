@@ -1,6 +1,6 @@
 .container {
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
     display: flex;
     background-color: rgb(55, 55, 116);
     padding: 20px;
@@ -67,7 +67,7 @@
     .title_main1 {
       text-align: center;
       color: aquamarine;
-      font-size: 3vw;
+      font-size: 4vw;
   
     }
 

@@ -1,13 +1,16 @@
 import React from 'react';
 import './index.css'
-import icono from "../../assets/foto_main.jpg";
+
 
 const Main1 = () => {
   return (
     <div className="container">
       {/* 📌 Imagen en el lado izquierdo */}
       <div className="image-container">
-        <img src={icono} alt="Descripción" />
+        <img src="/smartia.png" alt="Smartia logo" className="profile-image1" />
+
+      
+
       </div>
 
       {/* 📌 Texto en el lado derecho */}
