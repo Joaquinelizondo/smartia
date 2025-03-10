@@ -1,5 +1,7 @@
 import React from 'react';
 import './index.css'
+import fotoMain from "../../assets/foto_main1.jpg"
+
 
 
 const Main1 = () => {
@@ -7,7 +9,7 @@ const Main1 = () => {
     <div className="container">
       {/* 📌 Imagen en el lado izquierdo */}
       <div className="image-container">
-      <img src="/foto_main.jpg" alt="Descripción" />
+      <img src={fotoMain} alt="Smartialab AI Solutions" /> 
 
       </div>
 
