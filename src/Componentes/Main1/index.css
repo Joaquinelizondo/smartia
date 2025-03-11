@@ -20,12 +20,14 @@
 
   }
   
-  /* 📌 Imagen a la izquierda */
-  .image-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+  .image-container img {
+    width: 100%; /* Ajusta el ancho al contenedor */
+    max-width: 300px; /* 📌 Limita el tamaño máximo */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    object-fit: cover; /* Evita distorsiones */
   }
+  
   
   .image-container img {
     max-width: 100%;
