@@ -7,22 +7,22 @@
   background-color: rgb(55, 55, 116);
   padding: 40px 20px;
   border-radius: 10px;
-  gap: 20px;
+  gap: 40px; /* 🔥 Mayor separación entre imagen y texto */
 }
 
 /* 🔹 Contenedor de la imagen */
 .image-container {
-  flex: 1;
+  flex: 1.2; /* 🔥 Ahora la imagen ocupa un poco más de espacio */
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 40%; /* 📌 Ahora limitamos su tamaño */
+  max-width: 45%; /* 🔥 Antes 40%, ahora la imagen puede crecer más */
 }
 
 /* 🔹 Imagen con tamaño equilibrado */
 .image-container img {
   width: 100%;
-  max-width: 400px; /* 🔥 Ahora no será tan enorme */
+  max-width: 450px; /* 🔥 Ahora es más grande pero sin exagerar */
   height: auto;
   border-radius: 10px;
   object-fit: contain;
@@ -30,7 +30,7 @@
 
 /* 🔹 Contenedor del texto */
 .text-container {
-  flex: 2;
+  flex: 1.8; /* 🔥 Permite que el texto también tenga espacio suficiente */
   padding: 20px;
   max-width: 600px;
 }
@@ -43,11 +43,11 @@
   }
 
   .image-container {
-    max-width: 70%;
+    max-width: 80%;
   }
 
   .image-container img {
-    max-width: 250px; /* 🔥 Ahora más pequeño en móviles */
+    max-width: 320px; /* 🔥 Antes 250px, ahora más grande en móviles */
   }
 
   .text-container {
