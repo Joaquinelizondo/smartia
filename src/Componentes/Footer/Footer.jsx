@@ -1,12 +1,11 @@
 import React from "react";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
-import "./index.css"; // Renombrado para más claridad
+import "./index.css"; // 👈 Asegúrate de que el CSS esté bien importado
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* 🔹 Sección About Us */}
         <div className="footer-section about">
           <h3>About Us</h3>
           <p>
@@ -15,26 +14,18 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* 🔹 Sección Follow Us */}
         <div className="footer-section follow">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            <a href="https://www.linkedin.com/company/96257599/" 
-               target="_blank" 
-               rel="noopener noreferrer" 
-               aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/company/96257599/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="icon" />
             </a>
-            <a href="https://instagram.com/smartialab" 
-               target="_blank" 
-               rel="noopener noreferrer" 
-               aria-label="Instagram">
+            <a href="https://instagram.com/smartialab" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="icon" />
             </a>
           </div>
         </div>
 
-        {/* 🔹 Sección Contact */}
         <div className="footer-section contact">
           <h3>Contact Us</h3>
           <p>Email: info@smartialab.com</p>
@@ -42,7 +33,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* 🔹 Parte Inferior del Footer */}
       <div className="footer-bottom">
         <p>&copy; 2025 Smartialab. All Rights Reserved.</p>
       </div>
