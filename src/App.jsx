@@ -1,11 +1,11 @@
 import { useEffect, useRef } from "react";
-import "./App.css";
+import "./App.css";  // ✅ Importa el CSS de forma correcta
 import Header from "./Componentes/Header/Header";
 import Body from "./Componentes/Body/Body";
 import Main from "./Componentes/Main/Main";
 import Footer from "./Componentes/Footer/Footer";
 import Main1 from "./Componentes/Main1/Main1";
-import "index.css"; // ✅ Corrección: Importa index.css sin "./" para evitar problemas en Vercel
+import "./index.css"; // ✅ Asegurar que se carga bien
 
 // ✅ No usamos ref en los componentes funcionales
 function App() {
@@ -46,3 +46,4 @@ function App() {
 }
 
 export default App;
+
