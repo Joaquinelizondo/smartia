@@ -1,11 +1,12 @@
 import React from "react";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
-import "./index.css"; // 👈 Asegúrate de que el CSS esté bien importado
+import "./index.css"; // Asegurar la importación correcta del CSS
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
+        {/* About Us */}
         <div className="footer-section about">
           <h3>About Us</h3>
           <p>
@@ -14,6 +15,7 @@ const Footer = () => {
           </p>
         </div>
 
+        {/* Follow Us */}
         <div className="footer-section follow">
           <h3>Follow Us</h3>
           <div className="social-icons">
@@ -26,6 +28,7 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Contact Us */}
         <div className="footer-section contact">
           <h3>Contact Us</h3>
           <p>Email: info@smartialab.com</p>
@@ -33,6 +36,7 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* Footer bottom */}
       <div className="footer-bottom">
         <p>&copy; 2025 Smartialab. All Rights Reserved.</p>
       </div>
