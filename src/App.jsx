@@ -5,10 +5,9 @@ import Body from "./Componentes/Body/Body";
 import Main from "./Componentes/Main/Main";
 import Footer from "./Componentes/Footer/Footer";
 import Main1 from "./Componentes/Main1/Main1";
-import './index.css'
-import 'typeface-lato';
+import "index.css"; // ✅ Corrección: Importa index.css sin "./" para evitar problemas en Vercel
 
-
+// ✅ No usamos ref en los componentes funcionales
 function App() {
   const sectionsRef = useRef([]);
 
@@ -37,11 +36,11 @@ function App() {
 
   return (
     <div>
-      <Header ref={(el) => (sectionsRef.current[0] = el)} className="hidden" />
-      <Body ref={(el) => (sectionsRef.current[1] = el)} className="hidden" />
-      <Main1 ref={(el) => (sectionsRef.current[3] = el)} className="hidden" />
-      <Main ref={(el) => (sectionsRef.current[2] = el)} className="hidden" />
-      <Footer ref={(el) => (sectionsRef.current[3] = el)} className="hidden" />
+      <Header className="hidden" />
+      <Body className="hidden" />
+      <Main1 className="hidden" />
+      <Main className="hidden" />
+      <Footer className="hidden" />
     </div>
   );
 }
