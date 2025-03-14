@@ -1,0 +1,61 @@
+/* 🔹 Contenedor principal */
+.container {
+  margin: 2vw 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(55, 55, 116);
+  padding: 40px 20px;
+  border-radius: 10px;
+  gap: 40px; /* 🔥 Mayor separación entre imagen y texto */
+}
+
+/* 🔹 Contenedor de la imagen */
+.image-container {
+  flex: 1.2; /* 🔥 Ahora la imagen ocupa un poco más de espacio */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 45%; /* 🔥 Antes 40%, ahora la imagen puede crecer más */
+}
+
+/* 🔹 Imagen con tamaño equilibrado */
+.image-container img {
+  width: 100%;
+  max-width: 450px; /* 🔥 Ahora es más grande pero sin exagerar */
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+/* 🔹 Contenedor del texto */
+.text-container {
+  flex: 1.8; /* 🔥 Permite que el texto también tenga espacio suficiente */
+  padding: 20px;
+  max-width: 600px;
+}
+
+/* 🔹 Responsividad para móviles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-container {
+    max-width: 80%;
+  }
+
+  .image-container img {
+    max-width: 320px; /* 🔥 Antes 250px, ahora más grande en móviles */
+  }
+
+  .text-container {
+    text-align: center;
+    padding: 15px;
+  }
+
+  .text_main1 {
+    font-size: 1rem;
+  }
+}

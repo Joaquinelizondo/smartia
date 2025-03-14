@@ -1,0 +1,75 @@
+/* Contenedor principal */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+.header-container {
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    padding: 0 5vw;
+    background-color: rgb(55, 55, 116);
+  }
+  
+  /* Sección principal del encabezado */
+  .header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  h2 {
+    font-size: 10vw;
+    font-family: sans-serif;
+    color: aquamarine !important;
+  }
+
+  h3 {
+    font-size: 5vw;
+    color: white;
+  }
+  
+  
+  /* 🔥 Título con efecto de escritura sin cursor */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  
+  /* 📱 Responsividad para tablets */
+  @media (max-width: 768px) {
+    .header {
+        margin-top: 10vw;
+        
+    }
+  
+    h2 {
+        font-size: 5vw;
+    }
+  
+    h3 {
+        font-size: 5vw;
+    }
+  }
+  
+  /* 📱 Responsividad para móviles */
+  @media (max-width: 480px) {
+    .header {
+        margin-top: 20vw;
+    }
+  
+    h2 {
+        font-size: 4.5vw;
+    }
+  
+    h3 {
+        font-size: 2vw;
+    }
+  }
+  

@@ -1,0 +1,103 @@
+.footer {
+  background-color: rgb(55, 55, 116);
+  color: white;
+  padding: 40px 5vw;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor principal del footer */
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Secciones del footer */
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  text-align: center;
+}
+
+/* Títulos del footer */
+.footer-section h4 { /* ✅ Se cambió de h3 a h4 */
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-size: 1rem; /* 🔥 Ajustado para evitar que sea demasiado grande */
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Texto de las secciones */
+.footer-section p {
+  margin: 5px 0;
+  color: #d3d3d3;
+  line-height: 1.5;
+  font-size: 0.9rem; /* 🔥 Reducción de tamaño */
+}
+
+/* Estilos de los íconos sociales */
+.social-icons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  font-size: 1.5rem; /* 🔥 Reducción del tamaño */
+}
+
+.social-icons a {
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  color: #007bff;
+}
+
+/* Línea separadora en la parte inferior */
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 15px;
+  padding-top: 10px;
+  font-size: 0.85rem;
+  color: #bbb;
+}
+
+/* 📌 RESPONSIVIDAD */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-section {
+    min-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 15px 0;
+  }
+
+  .footer-section h4 {
+    font-size: 0.95rem;
+  }
+
+  .footer-section p {
+    font-size: 0.85rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.75rem;
+  }
+}
