@@ -1,16 +1,16 @@
 import React from "react";
-import "./index.css"; 
+import "./index.css";
 import fotoMain from "../../assets/ecommerce.jpg";
 
 const Main1 = () => {
   return (
     <div className="container">
-      {/* 📌 Imagen en el lado izquierdo */}
+      {/* 📌 Imagen en la parte superior */}
       <div className="image-container">
         <img src={fotoMain} alt="Smartialab AI Solutions" />
       </div>
 
-      {/* 📌 Texto en el lado derecho */}
+      {/* 📌 Texto debajo de la imagen */}
       <div className="text-container">
         <h2 className="title_main1">Smartialab: AI Solutions for Business Growth</h2>
         <p className="text_main1">
