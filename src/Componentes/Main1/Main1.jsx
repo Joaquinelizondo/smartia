@@ -1,16 +1,16 @@
 import React from "react";
-import "./index.css"; 
+import "./index.css";
 import fotoMain from "../../assets/foto_main1.jpg";
 
 const Main1 = () => {
   return (
     <div className="container">
-      {/* 📌 Imagen en el lado izquierdo */}
+      {/* 📌 Imagen arriba en móviles, al lado en pantallas grandes */}
       <div className="image-container">
-        <img src={fotoMain} alt="Smartialab AI Solutions" /> 
+        <img src={fotoMain} alt="Smartialab AI Solutions" />
       </div>
 
-      {/* 📌 Texto en el lado derecho */}
+      {/* 📌 Texto debajo en móviles, a la derecha en pantallas grandes */}
       <div className="text-container">
         <h2 className="title_main1">Smartialab: AI Solutions for Business Growth</h2>
         <p className="text_main1">

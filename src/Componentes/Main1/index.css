@@ -1,38 +1,53 @@
 /* 🔹 Contenedor principal */
 .container {
-  margin: 2vw 5vw;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: rgb(55, 55, 116);
   padding: 40px 20px;
   border-radius: 10px;
-  gap: 40px; /* 🔥 Mayor separación entre imagen y texto */
+  gap: 40px;
+  max-width: 900px;
+  margin: 2vw auto;
 }
 
 /* 🔹 Contenedor de la imagen */
 .image-container {
-  flex: 1.2; /* 🔥 Ahora la imagen ocupa un poco más de espacio */
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 45%; /* 🔥 Antes 40%, ahora la imagen puede crecer más */
+  max-width: 40%;
 }
 
-/* 🔹 Imagen con tamaño equilibrado */
+/* 🔹 Imagen redonda con borde difuminado */
 .image-container img {
-  width: 100%;
-  max-width: 450px; /* 🔥 Ahora es más grande pero sin exagerar */
-  height: auto;
-  border-radius: 10px;
-  object-fit: contain;
+  width: 180px; /* 🔥 Tamaño fijo en pantallas grandes */
+  height: 180px;
+  border-radius: 50%; /* 🔥 Hace la imagen circular */
+  object-fit: cover;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5); /* 🔥 Efecto difuminado */
 }
 
 /* 🔹 Contenedor del texto */
 .text-container {
-  flex: 1.8; /* 🔥 Permite que el texto también tenga espacio suficiente */
+  flex: 1.5;
   padding: 20px;
-  max-width: 600px;
+  max-width: 500px;
+  color: white;
+  text-align: left;
+}
+
+/* 🔹 Títulos y textos */
+.title_main1 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.text_main1 {
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 /* 🔹 Responsividad para móviles */
@@ -40,22 +55,28 @@
   .container {
     flex-direction: column;
     text-align: center;
+    gap: 20px;
   }
 
   .image-container {
-    max-width: 80%;
+    max-width: 100%;
   }
 
   .image-container img {
-    max-width: 320px; /* 🔥 Antes 250px, ahora más grande en móviles */
+    width: 120px; /* 🔥 Tamaño más pequeño en móviles */
+    height: 120px;
   }
 
   .text-container {
-    text-align: center;
-    padding: 15px;
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  .title_main1 {
+    font-size: 1.5rem;
   }
 
   .text_main1 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
