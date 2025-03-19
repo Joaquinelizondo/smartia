@@ -4,7 +4,6 @@ import profileImage from "../../assets/logo1.png";
 import icono from "../../assets/icono.png";
 import { SiGooglecloud } from "react-icons/si";
 
-
 // 📌 Importar íconos de tecnologías
 import {
   SiPython,
