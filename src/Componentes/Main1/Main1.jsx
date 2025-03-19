@@ -4,15 +4,15 @@ import fotoMain from "../../assets/fotom.jpeg";
 
 const Main1 = () => {
   return (
-    <div className="container">
-      {/* 📌 Imagen dentro de un div para asegurar tamaño y forma */}
+    <div className="main1-container">
+      {/* 📌 Imagen con borde difuminado */}
       <div className="image-container">
         <div className="image-wrapper">
           <img src={fotoMain} alt="Smartialab AI Solutions" />
         </div>
       </div>
 
-      {/* 📌 Contenedor del texto */}
+      {/* 📌 Contenedor del texto con más separación */}
       <div className="text-container">
         <h2 className="title_main1">Smartialab: AI Solutions for Business Growth</h2>
         <p className="text_main1">
