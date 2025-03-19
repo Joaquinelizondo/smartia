@@ -5,12 +5,14 @@ import fotoMain from "../../assets/foto_main1.jpg";
 const Main1 = () => {
   return (
     <div className="container">
-      {/* 📌 Imagen arriba en móviles, al lado en pantallas grandes */}
+      {/* 📌 Imagen dentro de un div con un tamaño fijo */}
       <div className="image-container">
-        <img src={fotoMain} alt="Smartialab AI Solutions" />
+        <div className="image-wrapper">
+          <img src={fotoMain} alt="Smartialab AI Solutions" />
+        </div>
       </div>
 
-      {/* 📌 Texto debajo en móviles, a la derecha en pantallas grandes */}
+      {/* 📌 Contenedor del texto */}
       <div className="text-container">
         <h2 className="title_main1">Smartialab: AI Solutions for Business Growth</h2>
         <p className="text_main1">
