@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import fotoMain from "../../assets/foto_main1.jpg";
+import fotoMain from "../../assets/fotom.jpg";
 
 const Main1 = () => {
   return (
