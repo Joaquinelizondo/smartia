@@ -1,75 +1,71 @@
-/* Contenedor principal */
+/* 🔹 Importar fuente Lato desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
+/* 🔹 Contenedor principal */
 .header-container {
     text-align: center;
     margin-top: 20px;
-    color: black;
-    padding: 0 5vw;
+    padding: 20px;
     background-color: rgb(55, 55, 116);
-  }
-  
-  /* Sección principal del encabezado */
-  .header {
+    border-radius: 10px;
     width: 100%;
-    height: auto;
+}
+
+/* 🔹 Sección principal del encabezado */
+.header {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-  
-  h2 {
-    font-size: 10vw;
-    font-family: sans-serif;
+}
+
+/* 🔹 Título principal */
+h2 {
+    font-size: 7vw; /* 🔥 Ajuste automático al tamaño de pantalla */
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
     color: aquamarine !important;
-  }
+    text-align: center;
+    margin-bottom: 10px;
+}
 
-  h3 {
-    font-size: 5vw;
+/* 🔹 Subtítulo */
+h3 {
+    font-size: 4vw; /* 🔥 Mejor ajuste para diferentes pantallas */
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     color: white;
-  }
-  
-  
-  /* 🔥 Título con efecto de escritura sin cursor */
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
+    text-align: center;
+    margin-bottom: 10px;
+}
 
-  
-  /* 📱 Responsividad para tablets */
-  @media (max-width: 768px) {
-    .header {
-        margin-top: 10vw;
-        
+/* 🔹 Responsividad para tablets */
+@media (max-width: 768px) {
+    .header-container {
+        padding: 15px;
     }
-  
+
     h2 {
-        font-size: 5vw;
+        font-size: 6vw; /* 🔥 Aumentado para mejorar visibilidad */
     }
-  
+
     h3 {
-        font-size: 5vw;
+        font-size: 3.5vw;
     }
-  }
-  
-  /* 📱 Responsividad para móviles */
-  @media (max-width: 480px) {
-    .header {
-        margin-top: 20vw;
+}
+
+/* 🔹 Responsividad para móviles */
+@media (max-width: 480px) {
+    .header-container {
+        padding: 10px;
     }
-  
+
     h2 {
-        font-size: 4.5vw;
+        font-size: 5.5vw; /* 🔥 Mejor tamaño en móviles */
     }
-  
+
     h3 {
-        font-size: 2vw;
+        font-size: 3.5vw; /* 🔥 Más grande para mejor legibilidad */
     }
-  }
-  
+}
