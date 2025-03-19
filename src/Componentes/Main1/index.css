@@ -1,44 +1,44 @@
-/* 🔹 Contenedor principal */
+/* 🔹 Contenedor principal con separación extra */
 .container {
+  margin: 80px auto; /* 🔥 Mayor separación arriba y abajo */
+  padding: 40px 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: rgb(55, 55, 116);
-  padding: 40px 20px;
   border-radius: 10px;
   gap: 40px;
   max-width: 900px;
-  margin: 2vw auto;
   flex-wrap: wrap;
 }
 
 /* 🔹 Contenedor de la imagen */
 .image-container {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 30%;
+  max-width: 100%;
 }
 
-/* 🔹 Contenedor que limita el tamaño de la imagen */
+/* 🔹 Contenedor que mantiene la imagen redonda */
 .image-wrapper {
-  width: 120px; /* 🔥 Tamaño fijo para evitar desbordamientos */
-  height: 120px;
+  width: 150px; /* 🔥 Tamaño fijo */
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  overflow: hidden; /* 🔥 Evita que la imagen se expanda */
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  background-color: white; /* 🔥 Para evitar bordes oscuros */
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); /* 🔥 Efecto difuminado */
 }
 
 /* 🔹 Imagen dentro del contenedor */
 .image-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* 🔥 Asegura que la imagen se mantenga contenida */
+  object-fit: cover; /* 🔥 Ajusta sin deformar */
 }
 
 /* 🔹 Contenedor del texto */
@@ -50,26 +50,33 @@
   text-align: left;
 }
 
+/* 🔹 Títulos y textos */
+.title_main1 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.text_main1 {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
 /* 🔹 Responsividad para móviles */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
     text-align: center;
-    gap: 20px;
-  }
-
-  .image-container {
-    max-width: 100%;
+    gap: 30px;
   }
 
   .image-wrapper {
-    width: 90px; /* 🔥 Tamaño más pequeño en móviles */
-    height: 90px;
+    width: 120px; /* 🔥 Tamaño más pequeño en móviles */
+    height: 120px;
   }
 
   .text-container {
     max-width: 90%;
-    padding: 10px;
+    padding: 15px;
   }
 
   .title_main1 {

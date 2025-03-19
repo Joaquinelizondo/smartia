@@ -1,11 +1,11 @@
 import React from "react";
-import "./index.css";
+import "./index.css"; 
 import fotoMain from "../../assets/fotom.jpeg";
 
 const Main1 = () => {
   return (
     <div className="container">
-      {/* 📌 Imagen dentro de un div con un tamaño fijo */}
+      {/* 📌 Imagen dentro de un div para asegurar tamaño y forma */}
       <div className="image-container">
         <div className="image-wrapper">
           <img src={fotoMain} alt="Smartialab AI Solutions" />
