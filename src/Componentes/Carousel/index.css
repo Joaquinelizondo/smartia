@@ -1,0 +1,122 @@
+/* 📌 Contenedor principal del carrusel */
+.carousel-container {
+    position: relative;
+    height: 55vw;
+    width: 95%;
+    max-width: 650px;
+    margin: 30px auto; /* Agrega margen arriba y abajo */
+    padding: 20px 0; /* Añade un poco de espacio arriba y abajo */
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el carrusel */
+  }
+  
+  /* 📌 Imágenes dentro del carrusel */
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel img {
+    width: 95%;
+    max-height: 350px; /* Limita la altura de las imágenes */
+    object-fit: contain; /* Asegura que las imágenes no se distorsionen */
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  /* 📌 Oculta las imágenes no activas */
+  .hidden {
+    display: none;
+  }
+  
+  .active {
+    display: block;
+  }
+  
+  /* 📌 Botones de navegación */
+  button.prev,
+  button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
+  
+  /* 📌 Indicadores del carrusel */
+  .dots {
+    text-align: center;
+    margin-top: 15px; /* Separa los puntos del carrusel */
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .active-dot {
+    background-color: black;
+  }
+  
+  /* 📌 🔥 ESTILOS RESPONSIVE 🔥 */
+  
+  /* ✅ Para tablets */
+  @media (max-width: 768px) {
+    .carousel-container {
+      width: 100%;
+    }
+  
+    button.prev,
+    button.next {
+      padding: 8px;
+      font-size: 18px;
+    }
+  
+    .dot {
+      width: 8px;
+      height: 8px;
+    }
+  }
+  
+  /* ✅ Para móviles */
+  @media (max-width: 480px) {
+    .carousel-container {
+      width: 95%;
+    }
+  
+    button.prev,
+    button.next {
+      padding: 5px;
+      font-size: 16px;
+    }
+  
+    .dot {
+      width: 6px;
+      height: 6px;
+    }
+  }

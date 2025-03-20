@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./index.css";
-import profileImage from "../../assets/logo1.png";
-import icono from "../../assets/icono.png";
+import profileImage from "/src/assets/logo1.png";
+import icono from "/src/assets/icono.png";
 import { SiGooglecloud } from "react-icons/si";
 
 // 📌 Importar íconos de tecnologías

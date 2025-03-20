@@ -1,7 +1,11 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  base: "/smartia/", // 🔹 Ajusta con el nombre de tu repositorio en GitHub
   plugins: [react()],
+  base: "/smartia/", // ⚠️ Asegúrate de que coincida con el nombre de tu repo
+  build: {
+    outDir: "dist",
+    emptyOutDir: true
+  }
 });

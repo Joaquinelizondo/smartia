@@ -1,8 +1,7 @@
 import React from 'react';
 import './index.css';
 
-// Importar logos de clientes
-import ecoLogo from "../../assets/eco.png";
+import ecoLogo from "/src/assets/eco.png";
 
 
 const solutions = [
