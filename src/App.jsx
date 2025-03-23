@@ -34,23 +34,23 @@ function App() {
     };
   }, []);
 
-  return (
-    <div>
-      <Header className="header" />
-      <div className="carousel-wrapper">
-        <Carousel /> {/* 📌 Carrusel con margen superior */}
-      </div>
-      <Body />
-      <div ref={(el) => (sectionsRef.current[0] = el)} className="hidden">
-        <Main1 />
-      </div>
-      <div ref={(el) => (sectionsRef.current[1] = el)} className="hidden">
-        <Main />
-      </div>
-      <Footer />
+return (
+  <div>
+    <Header className="header" />
+    <div className="carousel-wrapper">
+      <Carousel /> {/* 📌 Carrusel con margen superior */}
     </div>
-  );
-  
+    <Body />
+    <div className="show">
+      <Main1 />
+    </div>
+    <div ref={(el) => (sectionsRef.current[1] = el)} className="hidden">
+      <Main />
+    </div>
+    <Footer />
+  </div>
+);
+
 }
 
 export default App;
