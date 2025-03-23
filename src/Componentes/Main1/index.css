@@ -49,6 +49,7 @@
   max-width: 600px;
   color: white;
   text-align: left;
+  text-align: center;
 }
 
 /* 🔹 Títulos y textos */
@@ -68,6 +69,7 @@
     flex-direction: column;
     text-align: center;
     gap: 40px; /* 🔥 Más espacio en móviles */
+    text-align: center;
   }
 
   .image-wrapper {
@@ -78,6 +80,7 @@
   .text-container {
     max-width: 90%;
     padding: 20px;
+    text-align: center;
   }
 
   .title_main1 {
