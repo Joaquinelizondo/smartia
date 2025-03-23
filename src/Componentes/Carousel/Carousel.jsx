@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import "./index.css"; 
+import "./index.css"; // CSS del carrusel
 
-import logo1 from "../../assets/logo1.png";  // 📌 Ruta relativa a "src/Componentes/Carousel/"
-import fotom from "../../assets/fotom.jpeg"; 
+// ✅ Importación correcta de imágenes desde src/assets
+import logo1 from "../../assets/personai2.jpg";
+import fotom from "../../assets/personai.jpg";
+import fotom1 from "../../assets/personai3.jpg";
 
-
-const images = [logo1, fotom, logo1];
+const images = [logo1, fotom, fotom1]; // podés cambiar el orden o usar más
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,7 +22,17 @@ const Carousel = () => {
 
   return (
     <div className="carousel-container">
-      <button className="prev" onClick={() => setCurrentIndex(currentIndex === 0 ? images.length - 1 : currentIndex - 1)}>❮</button>
+      <button
+        className="prev"
+        onClick={() =>
+          setCurrentIndex(
+            currentIndex === 0 ? images.length - 1 : currentIndex - 1
+          )
+        }
+      >
+        ❮
+      </button>
+
       <div className="carousel">
         {images.map((image, index) => (
           <img
@@ -32,7 +43,17 @@ const Carousel = () => {
           />
         ))}
       </div>
-      <button className="next" onClick={() => setCurrentIndex(currentIndex === images.length - 1 ? 0 : currentIndex + 1)}>❯</button>
+
+      <button
+        className="next"
+        onClick={() =>
+          setCurrentIndex(
+            currentIndex === images.length - 1 ? 0 : currentIndex + 1
+          )
+        }
+      >
+        ❯
+      </button>
 
       <div className="dots">
         {images.map((_, index) => (

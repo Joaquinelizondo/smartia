@@ -47,11 +47,11 @@ h3 {
     }
 
     h2 {
-        font-size: 6vw; /* 🔥 Aumentado para mejorar visibilidad */
+        font-size: 7vw; /* 🔥 Aumentado para mejorar visibilidad */
     }
 
     h3 {
-        font-size: 3.5vw;
+        font-size: 5vw;
     }
 }
 
@@ -62,10 +62,10 @@ h3 {
     }
 
     h2 {
-        font-size: 5.5vw; /* 🔥 Mejor tamaño en móviles */
+        font-size: 7vw; /* 🔥 Mejor tamaño en móviles */
     }
 
     h3 {
-        font-size: 3.5vw; /* 🔥 Más grande para mejor legibilidad */
+        font-size: 5vw; /* 🔥 Más grande para mejor legibilidad */
     }
 }

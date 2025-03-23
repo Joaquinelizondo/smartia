@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/smartia/", // ⚠️ Asegúrate de que coincida con el nombre de tu repo
+  base: "/smartia/", // ⚠️ Debe coincidir con el nombre del repo en GitHub Pages
   build: {
     outDir: "dist",
     emptyOutDir: true
