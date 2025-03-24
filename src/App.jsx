@@ -44,7 +44,7 @@ return (
     <div className="show">
       <Main1 />
     </div>
-    <div ref={(el) => (sectionsRef.current[1] = el)} className="hidden">
+    <div className="show">
       <Main />
     </div>
     <Footer />
