@@ -7,6 +7,7 @@ import Main from "./Componentes/Main/Main";
 import Footer from "./Componentes/Footer/Footer";
 import Main1 from "./Componentes/Main1/Main1";
 import "./index.css"; // ✅ Asegurar que se carga bien
+import Agent from "./Componentes/Agent/Agent";
 
 function App() {
   const sectionsRef = useRef([]);
@@ -47,6 +48,7 @@ return (
     <div className="show">
       <Main />
     </div>
+    <Agent />
     <Footer />
   </div>
 );
