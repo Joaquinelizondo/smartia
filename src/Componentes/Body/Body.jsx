@@ -2,23 +2,8 @@ import React, { useEffect, useRef } from "react";
 import "./index.css";
 import profileImage from "/src/assets/logo1.png";
 import icono from "/src/assets/icono.png";
-import { SiGooglecloud } from "react-icons/si";
-
-// 📌 Importar íconos de tecnologías
-import {
-  SiPython,
-  SiPlotly,
-  SiPandas,
-  SiNumpy,
-  SiApachespark,
-  SiDatabricks,
-  SiTableau,
-  SiReact,
-  SiPostgresql,
-} from "react-icons/si";
+import { SiGooglecloud, SiPython, SiPlotly, SiPandas, SiNumpy, SiApachespark, SiDatabricks, SiTableau, SiReact, SiPostgresql } from "react-icons/si";
 import { FaFileExcel } from "react-icons/fa";
-
-// 📌 Importar Material UI Icons para Google & Gemini AI
 import GoogleIcon from "@mui/icons-material/Google";
 
 const useIntersectionFadeIn = (refs) => {
@@ -53,9 +38,8 @@ const ContentBox = ({ title, content }) => {
   useIntersectionFadeIn([ref]);
 
   return (
-    <div className="body1">
+    <div className="body1" id="about">
       <div className="content-box" ref={ref} style={{ fontFamily: "Lato, sans-serif" }}>
-        {/* 📌 Contenedor para el icono dentro del box */}
         <div className="icon-container">
           <img src={icono} alt="Icon" className="icon-inside-box" />
         </div>
@@ -110,9 +94,9 @@ const Body = () => {
 
   return (
     <section className="body">
-      <div className="profile">
+      {/* <div className="profile">
         <img src={profileImage} alt="Profile" className="profile-image" />
-      </div>
+      </div> */}
 
       <div className="title" ref={aboutTitleRef} style={{ fontFamily: "Lato, sans-serif" }}>
         <h1 className="about_us">About Us</h1>
@@ -127,11 +111,8 @@ const Body = () => {
           Technologies We Use
         </h2>
         <div className="icons-container">
-          {/* 📌 Íconos de Google & Gemini AI */}
           <GoogleIcon fontSize="large" className="tech-material-icon" titleAccess="Google" />
           <SiGooglecloud size={40} title="Google Cloud / Vertex AI" />
-
-          {/* 📌 Otros íconos de tecnologías */}
           <SiPython title="Python" />
           <SiPandas title="Pandas" />
           <SiNumpy title="NumPy" />

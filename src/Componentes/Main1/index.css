@@ -6,7 +6,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: rgb(55, 55, 116);
+  background: linear-gradient(135deg, #eef1ff 0%, #d6e1ff 100%);
   border-radius: 10px;
   gap: 50px; /* 🔥 Más espacio entre la imagen y el texto */
   max-width: 1000px;
@@ -47,7 +47,7 @@
   flex: 2;
   padding: 30px;
   max-width: 600px;
-  color: white;
+  color: #6c8cff;
   text-align: left;
   text-align: center;
 }

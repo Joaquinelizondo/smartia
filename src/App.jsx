@@ -1,17 +1,23 @@
-import { useEffect, useRef } from "react";
-import "./App.css";  // ✅ Importa el CSS correctamente
+import { useEffect, useRef, useState } from "react";
+import "./App.css";
+import "./index.css";
+
+// Componentes
+import NavigationBar from "./Componentes/NavigationBar/Navigation";
 import Header from "./Componentes/Header/Header";
 import Body from "./Componentes/Body/Body";
-import Carousel from "./Componentes/Carousel/Carousel";  // ✅ Se agrega el Carrusel aquí
-import Main from "./Componentes/Main/Main";
-import Footer from "./Componentes/Footer/Footer";
 import Main1 from "./Componentes/Main1/Main1";
-import "./index.css"; // ✅ Asegurar que se carga bien
-import Agent from "./Componentes/Agent/Agent";
+import Main from "./Componentes/Main/Main";
 import Plans from "./Componentes/Plans/Plans";
+import Footer from "./Componentes/Footer/Footer";
+import ContactModal from "./Componentes/ContactModal/ContactModal";
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const sectionsRef = useRef([]);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -36,25 +42,25 @@ function App() {
     };
   }, []);
 
-return (
-  <div>
-    <Header className="header" />
-    <div className="carousel-wrapper">
-      <Carousel /> {/* 📌 Carrusel con margen superior */}
-    </div>
-    <Body />
-    <div className="show">
-      <Main1 />
-    </div>
-    <div className="show">
-      <Main />
-    </div>
-    <Plans />
-    <Agent />
-    <Footer />
-  </div>
-);
+  return (
+    <div>
+      <NavigationBar />
+      <Header openContactModal={openModal} />
+      <Body />
 
+      <div ref={(el) => (sectionsRef.current[0] = el)} className="show">
+        <Main1 />
+      </div>
+
+      <div ref={(el) => (sectionsRef.current[1] = el)} className="show">
+        <Main />
+      </div>
+
+      <Plans />
+      <Footer />
+      <ContactModal isOpen={isModalOpen} onClose={closeModal} />
+    </div>
+  );
 }
 
 export default App;

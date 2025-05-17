@@ -31,7 +31,7 @@ const Main = () => {
   return (
     <>
       {/* 🔹 Sección Solutions */}
-      <div className="solutions-container">
+      <div className="solutions-container" id="solutions">
         <h2>Solutions</h2>
         <div className="solutions-grid">
           {solutions.map((solution, index) => (

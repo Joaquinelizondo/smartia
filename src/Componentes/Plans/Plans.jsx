@@ -4,51 +4,51 @@ import "./index.css";
 const plans = [
   {
     title: "SmartIA Basic",
-    description: "Ideal para emprendedores o equipos que están comenzando con un agente",
+    description: "Ideal for entrepreneurs or teams starting with an agent",
     items: [
-      "Hasta 500 sesiones mensuales",
-      "1 canal de integración (web o WhatsApp)",
-      "Diseño de hasta 5 preguntas frecuentes",
-      "Soporte via mail o WhatsApp",
+      "Up to 500 monthly sessions",
+      "1 integration channel (web or WhatsApp)",
+      "Design of up to 5 frequently asked questions",
+      "Support via email or WhatsApp",
     ],
     icon: "💡",
   },
   {
     title: "SmartIA Plus",
-    description: "Pensado para tiendas, centros médicos y pymes que quieren automatizar su atención",
+    description: "Designed for shops, medical centers, and SMEs looking to automate customer service",
     items: [
-      "Hasta 2.000 sesiones mensuales",
-      "Integración web + WhatsApp",
-      "Automatización de respuestas",
-      "Captación de datos",
-      "Personalización de hasta 5 flujos",
-      "Soporte via mail o WhatsApp",
+      "Up to 2,000 monthly sessions",
+      "Web + WhatsApp integration",
+      "Automated responses",
+      "Data capture",
+      "Customization of up to 5 flows",
+      "Support via email or WhatsApp",
     ],
     icon: "🚀",
   },
   {
     title: "SmartIA Ultra",
-    description: "Diseñado para empresas con alta demanda de consultas o atención 24/7",
+    description: "Designed for companies with high demand for inquiries or 24/7 service",
     items: [
-      "Hasta 10.000 sesiones mensuales",
-      "Integraciones con CRM, ERPs o ecommerce",
-      "Automatización de respuestas personalizadas sin límite",
-      "Flujos avanzados",
-      "Captación de datos",
-      "Soporte personalizado",
-      "Dashboard de métricas",
+      "Up to 10,000 monthly sessions",
+      "Integrations with CRMs, ERPs, or ecommerce",
+      "Unlimited personalized automated responses",
+      "Advanced flows",
+      "Data capture",
+      "Personalized support",
+      "Metrics dashboard",
     ],
     icon: "⚙️",
   },
   {
     title: "SmartIA Business",
-    description: "Solución hecha a medida para empresas que buscan un desarrollo sin límites",
+    description: "Custom-made solution for companies seeking unlimited development",
     items: [
-      "Sesiones mensuales ilimitadas",
-      "Integraciones a medida según necesidad",
-      "Automatización de respuestas ilimitada",
-      "Desarrollo de flujos personalizados sin restricción",
-      "Soporte premium 24/7",
+      "Unlimited monthly sessions",
+      "Custom integrations as needed",
+      "Unlimited response automation",
+      "Development of fully customized flows",
+      "Premium 24/7 support",
     ],
     icon: "🧠",
   },
@@ -56,8 +56,8 @@ const plans = [
 
 const Plans = () => {
   return (
-    <div className="plans-wrapper">
-      <h1 className="plans-title">Our Plans</h1> {/* 👈 Título agregado */}
+    <div className="plans-wrapper" id="plans">
+      <h1 className="plans-title">Our Plans</h1>
       <div className="plans-container">
         {plans.map((plan, index) => (
           <div key={index} className="plan-card">

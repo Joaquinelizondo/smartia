@@ -4,7 +4,7 @@ import "./index.css"; // ✅ Asegurar que el CSS esté bien importado
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="contact">
       <div className="footer-container">
         {/* About Us */}
         <div className="footer-section about">
