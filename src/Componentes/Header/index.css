@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, #eef1ff 0%, #d6e1ff 100%);
-    padding: 80px 20px;
+    padding: 140px 20px 80px 20px;
     flex-wrap: wrap;
     text-align: left;
 }
@@ -166,16 +166,21 @@ body {
 
 /* 🔹 Mobile */
 @media (max-width: 480px) {
+    .hero-section {
+      padding: 80px 20px 60px 20px; /* mobile */
+    }
+  
     .hero-content-left h1 {
-        font-size: 2rem;
+      font-size: 2rem;
     }
-
+  
     .subtext {
-        font-size: 1rem;
+      font-size: 1rem;
     }
-
+  
     .btn-primary,
     .btn-secondary {
-        width: 100%;
+      width: 100%;
     }
-}
+  }
+  

@@ -32,7 +32,7 @@ const ContactModel = ({ isOpen, onClose }) => {
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="close-button" onClick={onClose}>×</button>
-        <h2>Contact Us</h2>
+        <h2 className="modal-title">Contact Us</h2>
         <form ref={formRef} onSubmit={sendEmail} className="contact-form">
           <input type="text" name="name" placeholder="Full Name" required />
           <input type="email" name="email" placeholder="Email" required />

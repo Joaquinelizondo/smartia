@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/", // ✅ Corrección: base raíz para dominio personalizado
+  base: "./", // ✅ Corrección: base raíz para dominio personalizado
   build: {
     outDir: "dist",
     emptyOutDir: true

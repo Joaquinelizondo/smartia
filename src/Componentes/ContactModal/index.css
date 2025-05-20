@@ -11,6 +11,16 @@
   z-index: 999;
 }
 
+.modal-title  {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-primary {
+  display: flex;
+  justify-content: center;
+}
+
 .modal-content {
   background: white;
   padding: 40px;
