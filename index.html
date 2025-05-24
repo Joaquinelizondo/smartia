@@ -5,28 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smartialab</title>
 
-    <!-- Dialogflow Messenger CSS -->
-    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
-    <!-- Esto va dentro del <head> -->
+    <!-- Tipografías -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"> -->
+    <link rel="icon" type="image/png" href="./logo1.png" />
 
-    <!-- Estilo personalizado para df-messenger -->
-    <style>
-      df-messenger {
-        z-index: 999;
-        position: fixed;
-        bottom: 16px;
-        right: 16px;
-        --df-messenger-font-color: #000;
-        --df-messenger-font-family: Roboto;
-        --df-messenger-chat-background: #f3f6fc;
-        --df-messenger-message-user-background: #d3e3fd;
-        --df-messenger-message-bot-background: #fff;
-      }
-    </style>
-    <script type="module" crossorigin src="./assets/index-BPT9LwvL.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BWfcxYRq.css">
+    <!-- Estilos de n8n chat -->
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat@0.27.1/dist/style.css" rel="stylesheet" />
+    <script type="module" crossorigin src="./assets/index-BuMI6KDi.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Cp1qG5gN.css">
   </head>
 
   <body>
@@ -34,18 +20,6 @@
 
     <!-- Tu app React -->
 
-    <!-- Dialogflow Messenger Script -->
-    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-
-    <!-- Dialogflow Messenger Widget -->
-    <df-messenger
-      project-id="smartia-01"
-      agent-id="1d6ee334-9d63-46a4-bd82-eb45ebbb5b24"
-      language-code="es"
-      max-query-length="-1"
-    >
-      <df-messenger-chat-bubble chat-title="SmartIA-Demo-01">
-      </df-messenger-chat-bubble>
-    </df-messenger>
+    <!-- Chat n8n oficial con createChat -->
   </body>
 </html>
