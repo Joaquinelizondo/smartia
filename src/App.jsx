@@ -12,6 +12,9 @@ import Plans from "./Componentes/Plans/Plans";
 import Footer from "./Componentes/Footer/Footer";
 import ContactModal from "./Componentes/ContactModal/ContactModal";
 
+// ✅ Importamos el chat de n8n
+import Agent from "./Componentes/Agent/Agent";
+
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const sectionsRef = useRef([]);
@@ -59,6 +62,9 @@ function App() {
       <Plans />
       <Footer />
       <ContactModal isOpen={isModalOpen} onClose={closeModal} />
+
+      {/* ✅ Montamos el chat al final para que esté presente en toda la app */}
+      <Agent />
     </div>
   );
 }

@@ -1,28 +1,22 @@
-import React from 'react'
-import './index.css'
+// src/Componentes/Agent/Agent.jsx
+import { useEffect } from 'react';
+import '@n8n/chat/style.css';
+import { createChat } from '@n8n/chat';
 
 const Agent = () => {
-  const handleOpenChatbot = () => {
-    setTimeout(() => {
-      const interval = setInterval(() => {
-        const dfMessenger = document.querySelector('df-messenger')
-        const bubble = dfMessenger?.shadowRoot?.querySelector('df-messenger-chat-bubble')
-        const openButton = bubble?.shadowRoot?.querySelector('button')
+  useEffect(() => {
+    createChat({
+      webhookUrl: 'https://smartialab.app.n8n.cloud/webhook/f34a05c8-d579-46a7-ad34-48a4868f2738/chat',
+      mode: 'window',
+      showWelcomeScreen: true,
+      initialMessages: [
+        '¡Hola! 👋',
+        '¿En qué puedo ayudarte hoy?'
+      ]
+    });
+  }, []);
 
-        if (openButton) {
-          openButton.click()
-          clearInterval(interval)
-        }
-      }, 300)
-    }, 1000) // esperamos 1 segundo inicial
-  }
+  return null; // El chat es un widget flotante, no requiere renderizar nada
+};
 
-  return (
-    <div className="agent-container">
-      <h2 className="agent-title">Try our solution</h2>
-
-    </div>
-  )
-}
-
-export default Agent
+export default Agent;
