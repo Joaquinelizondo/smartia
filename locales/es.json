@@ -1,0 +1,114 @@
+{
+    "navbar": {
+      "about": "Sobre Nosotros",
+      "solutions": "Soluciones",
+      "plans": "Planes",
+      "contact": "Contáctanos"
+    },
+    "hero": {
+      "title": "Plataforma Conversacional de IA todo en uno para",
+      "highlight": "Empresas",
+      "subtitle": "Engagement, automatización e inteligencia en cada interacción con el cliente — impulsado por IA conversacional.",
+      "viewSolutions": "Ver soluciones",
+      "contact": "Contáctanos"
+    },
+    "main1": {
+      "title": "Smartialab: Soluciones de IA para el crecimiento empresarial",
+      "paragraph1": "En Smartialab, aprovechamos el poder de la Inteligencia Artificial para transformar la forma en que las empresas interactúan con sus clientes. Nuestros agentes inteligentes brindan recomendaciones personalizadas, interacciones fluidas y valiosos conocimientos de negocio, optimizando las estrategias de marketing y mejorando la experiencia del cliente.",
+      "paragraph2": "Mediante el uso de procesamiento de lenguaje natural (NLP), análisis de datos y automatización impulsada por IA, ayudamos a las empresas a mejorar su eficiencia, aumentar el engagement y escalar globalmente. Ya sea una pequeña empresa o una gran corporación, Smartialab te brinda la tecnología necesaria para liderar el mercado digital."
+    },
+    "solutions": {
+      "title": "Soluciones",
+      "customers": "Nuestros Clientes",
+      "items": [
+        {
+          "title": "Interacción",
+          "text": "El chatbot proporciona una interfaz conversacional amigable y natural, permitiendo a los usuarios preguntar por productos, explorar categorías y recibir recomendaciones personalizadas según sus preferencias y hábitos de compra."
+        },
+        {
+          "title": "Generación de Datos mediante Interacción",
+          "text": "El chatbot analiza usuarios, preguntas y respuestas, preferencias y patrones de compra. Esta información se usará para mejorar las recomendaciones, ofrecer productos más adecuados y generar perfiles de consumo para los negocios aliados."
+        },
+        {
+          "title": "Promociones",
+          "text": "Los negocios aliados podrán lanzar campañas promocionales a través del chatbot. Las promociones serán personalizadas y presentadas según los intereses y comportamientos anteriores de los usuarios, maximizando la conversión."
+        },
+        {
+          "title": "Recomendaciones Personalizadas",
+          "text": "Basado en la interacción y el historial de compras, el chatbot ofrece recomendaciones específicas que podrían interesar al usuario. Estas recomendaciones se optimizarán mediante un sistema de inteligencia artificial que aprende de cada interacción."
+        }
+      ]
+    },
+    "about": {
+      "title": "Sobre Nosotros",
+      "technologies": "Tecnologías que usamos",
+      "sections": {
+        "Ventajas Competitivas": [
+          {
+            "title": "Experiencia Personalizada",
+            "description": "El agente aprende de las interacciones para brindar recomendaciones y promociones personalizadas."
+          },
+          {
+            "title": "Facilidad de Uso",
+            "description": "Simplifica el proceso de compra, haciéndolo más rápido y accesible."
+          },
+          {
+            "title": "Valor para los Negocios",
+            "description": "Optimiza estrategias de marketing, precios, y brinda información valiosa sobre los clientes."
+          }
+        ],
+        "Estrategia de Crecimiento": [
+          {
+            "title": "Incorporación de Nuevos Negocios",
+            "description": "Asociarse primero con pequeños negocios y luego con grandes marcas para ampliar la oferta."
+          },
+          {
+            "title": "Campañas de Marketing Segmentadas",
+            "description": "Publicidad segmentada según datos de comportamiento del usuario."
+          },
+          {
+            "title": "Expansión Internacional",
+            "description": "Tras consolidarse localmente, adaptarse a mercados internacionales en crecimiento."
+          }
+        ],
+        "Tecnologías Requeridas": [
+          {
+            "title": "Inteligencia Artificial",
+            "description": "Para personalización."
+          },
+          {
+            "title": "Procesamiento de Lenguaje Natural (NLP)",
+            "description": "Para interacciones fluidas."
+          },
+          {
+            "title": "Análisis de Datos",
+            "description": "Para insights y optimización."
+          },
+          {
+            "title": "Integración con Sistemas de Pago",
+            "description": "Para transacciones seguras y eficientes."
+          }
+        ]
+      }
+    },
+    "footer": {
+      "about": "Sobre Nosotros",
+      "aboutText": "Impulsamos negocios con automatización inteligente. Expertos en chatbots, inteligencia artificial y experiencias personalizadas para el cliente.",
+      "follow": "Síguenos",
+      "contact": "Contáctanos",
+      "email": "Correo",
+      "phone": "Teléfono",
+      "rights": "Todos los derechos reservados."
+    },
+    "contact": {
+      "title": "Contáctanos",
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "phone": "Número de teléfono",
+      "message": "Tu mensaje",
+      "send": "Enviar mensaje",
+      "success": "Mensaje enviado correctamente",
+      "error": "Error al enviar el mensaje"
+    }
+  }
+  

@@ -1,44 +1,52 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
-import "./index.css"; // ✅ Asegurar que el CSS esté bien importado
+import "./index.css";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer" id="contact">
       <div className="footer-container">
         {/* About Us */}
         <div className="footer-section about">
-          <h4>About Us</h4>
-          <p>
-            Empowering businesses with intelligent automation. Experts in Chatbots, 
-            Artificial Intelligence, and creating personalized customer experiences.
-          </p>
+          <h4>{t("footer.about")}</h4>
+          <p>{t("footer.aboutText")}</p>
         </div>
 
         {/* Follow Us */}
         <div className="footer-section follow">
-          <h4>Follow Us</h4>
+          <h4>{t("footer.follow")}</h4>
           <div className="social-icons">
-            <a href="https://www.linkedin.com/company/96257599/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/company/96257599/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedin className="icon" />
             </a>
-            <a href="https://instagram.com/smartialab" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://instagram.com/smartialab"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaInstagram className="icon" />
             </a>
           </div>
         </div>
 
-        {/* Contact Us */}
+        {/* Contact */}
         <div className="footer-section contact">
-          <h4>Contact Us</h4>
-          <p>Email: info@smartialab.com</p>
-          <p>Phone: +598 99 213 300</p>
+          <h4>{t("footer.contact")}</h4>
+          <p>{t("footer.email")}: info@smartialab.com</p>
+          <p>{t("footer.phone")}: +598 99 213 300</p>
         </div>
       </div>
 
-      {/* Footer bottom */}
+      {/* Footer Bottom */}
       <div className="footer-bottom">
-        <p>&copy; 2025 Smartialab. All Rights Reserved.</p>
+        <p>&copy; 2025 Smartialab. {t("footer.rights")}</p>
       </div>
     </footer>
   );

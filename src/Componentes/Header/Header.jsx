@@ -3,20 +3,25 @@ import "./index.css";
 import logo1 from "../../assets/personai2.jpg";
 import fotom from "../../assets/personai.jpg";
 import fotom1 from "../../assets/personai3.jpg";
+import { useTranslation } from "react-i18next";
 
 const Header = ({ openContactModal }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="hero-section" id="home">
       <div className="hero-content-left">
         <h1>
-          All-in-one AI Conversational Platform for <span className="highlight">Businesses</span>
+          {t("hero.title")} <span className="highlight">{t("hero.highlight")}</span>
         </h1>
-        <p className="subtext">
-          Engagement, automation, and intelligence in every customer interaction — powered by conversational AI.
-        </p>
+        <p className="subtext">{t("hero.subtitle")}</p>
         <div className="button-group">
-          <a href="#solutions" className="btn-primary">View Solutions</a>
-          <button className="btn-secondary" onClick={openContactModal}>Contact Us</button>
+          <a href="#solutions" className="btn-primary">
+            {t("hero.viewSolutions")}
+          </a>
+          <button className="btn-secondary" onClick={openContactModal}>
+            {t("hero.contact")}
+          </button>
         </div>
       </div>
 
@@ -32,3 +37,4 @@ const Header = ({ openContactModal }) => {
 };
 
 export default Header;
+

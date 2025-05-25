@@ -1,54 +1,44 @@
-import React from 'react';
-import './index.css';
+import React from "react";
+import { useTranslation } from "react-i18next";
+import "./index.css";
 
 import ecoLogo from "/src/assets/eco.png";
 
-
-const solutions = [
-  {
-    title: 'Interaction',
-    objectives: 'The chatbot provides a friendly and natural conversational interface, allowing users to ask about products, explore different categories, and receive recommendations based on their preferences and shopping habits.',
-  },
-  {
-    title: 'Data Generation through Interaction',
-    objectives: 'The chatbot analyzes users, questions and answers, preferences, and shopping patterns. This data will be used to improve recommendations, offer more suitable products, and generate consumption profiles for partner businesses.',
-  },
-  {
-    title: 'Promotions',
-    objectives: 'Partner businesses will be able to launch promotional campaigns through the chatbot. The promotions will be personalized and presented based on the users’ previous interests and shopping behaviors, maximizing the likelihood of conversion.',
-  },
-  {
-    title: 'Personalized Recommendations',
-    objectives: 'Based on interaction and purchase history, the chatbot offers specific product recommendations that might interest the user. These recommendations will be optimized through an artificial intelligence system that learns from each interaction.',
-  },
-];
-
-const customers = [
-  { name: 'Eco', logo: ecoLogo, url: 'https://www.eco.com' },
-];
-
 const Main = () => {
+  const { t } = useTranslation();
+  const solutions = t("solutions.items", { returnObjects: true });
+
+  const customers = [
+    { name: "Eco", logo: ecoLogo, url: "https://www.eco.com" },
+  ];
+
   return (
     <>
-      {/* 🔹 Sección Solutions */}
+      {/* 🔹 Soluciones */}
       <div className="solutions-container" id="solutions">
-        <h2>Solutions</h2>
+        <h2>{t("solutions.title")}</h2>
         <div className="solutions-grid">
           {solutions.map((solution, index) => (
             <div key={index} className="solution-box">
               <h5>{solution.title}</h5>
-              <p>{solution.objectives}</p>
+              <p>{solution.text}</p>
             </div>
           ))}
         </div>
       </div>
 
-      {/* 🔹 Sección Our Customers */}
-      <div className="solutions-container">  {/* Manteniendo los estilos de solutions-container */}
-        <h2>Our Customers</h2>
-        <div className="solutions-grid">  {/* Manteniendo la misma clase para diseño uniforme */}
+      {/* 🔹 Clientes */}
+      <div className="solutions-container">
+        <h2>{t("solutions.customers")}</h2>
+        <div className="solutions-grid">
           {customers.map((customer, index) => (
-            <a key={index} href={customer.url} target="_blank" rel="noopener noreferrer" className="customer-box">
+            <a
+              key={index}
+              href={customer.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="customer-box"
+            >
               <img src={customer.logo} alt={customer.name} className="customer-logo" />
             </a>
           ))}

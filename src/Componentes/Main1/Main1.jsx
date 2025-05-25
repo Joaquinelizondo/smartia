@@ -1,9 +1,11 @@
 import React from "react";
-import "./index.css"; 
+import { useTranslation } from "react-i18next";
+import "./index.css";
 import fotoMain from "/src/assets/fotom.jpeg";
 
-
 const Main1 = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="main1-container">
       {/* 📌 Imagen con borde difuminado */}
@@ -13,15 +15,11 @@ const Main1 = () => {
         </div>
       </div>
 
-      {/* 📌 Contenedor del texto con más separación */}
+      {/* 📌 Contenedor del texto */}
       <div className="text-container">
-        <h2 className="title_main1">Smartialab: AI Solutions for Business Growth</h2>
-        <p className="text_main1">
-          At Smartialab, we harness the power of Artificial Intelligence to transform the way businesses interact with their customers. Our intelligent agents provide personalized recommendations, seamless interactions, and valuable business insights, optimizing marketing strategies and improving customer experiences.
-        </p>
-        <p className="text_main1">
-          By leveraging Natural Language Processing (NLP), Data Analytics, and AI-driven automation, we help businesses enhance efficiency, drive engagement, and scale globally. Whether you're a small business or a large enterprise, Smartialab empowers you with the technology needed to stay ahead in the digital market.
-        </p>
+        <h2 className="title_main1">{t("main1.title")}</h2>
+        <p className="text_main1">{t("main1.paragraph1")}</p>
+        <p className="text_main1">{t("main1.paragraph2")}</p>
       </div>
     </div>
   );

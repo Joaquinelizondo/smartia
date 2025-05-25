@@ -1,8 +1,23 @@
 import React, { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import "./index.css";
+
 import profileImage from "/src/assets/logo1.png";
 import icono from "/src/assets/icono.png";
-import { SiGooglecloud, SiPython, SiPlotly, SiPandas, SiNumpy, SiApachespark, SiDatabricks, SiTableau, SiReact, SiPostgresql } from "react-icons/si";
+
+// Icons
+import {
+  SiGooglecloud,
+  SiPython,
+  SiPlotly,
+  SiPandas,
+  SiNumpy,
+  SiApachespark,
+  SiDatabricks,
+  SiTableau,
+  SiReact,
+  SiPostgresql,
+} from "react-icons/si";
 import { FaFileExcel } from "react-icons/fa";
 import GoogleIcon from "@mui/icons-material/Google";
 
@@ -59,56 +74,27 @@ const ContentBox = ({ title, content }) => {
 };
 
 const Body = () => {
+  const { t } = useTranslation();
   const aboutTitleRef = useRef(null);
   const techIconsRef = useRef(null);
 
   useIntersectionFadeIn([aboutTitleRef, techIconsRef]);
 
-  const sections = [
-    {
-      title: "Competitive Advantages",
-      content: [
-        { title: "Personalized Experience", description: "The agent learns from interactions to provide tailored recommendations and promotions for each customer." },
-        { title: "Ease of Use", description: "Simplifies the purchase process, making it faster and more accessible." },
-        { title: "Value for Businesses", description: "Optimizes marketing strategies, pricing, and provides valuable customer insights." },
-      ],
-    },
-    {
-      title: "Growth Strategy",
-      content: [
-        { title: "Onboarding New Businesses", description: "Partnering with small businesses initially and later with large brands to expand the product offering." },
-        { title: "Targeted Marketing Campaigns", description: "Segmented advertising based on user behavior data." },
-        { title: "International Expansion", description: "After consolidating in the local market, adapt to growing international ecommerce markets." },
-      ],
-    },
-    {
-      title: "Required Technologies",
-      content: [
-        { title: "Artificial Intelligence", description: "For personalization." },
-        { title: "Natural Language Processing (NLP)", description: "For seamless interactions." },
-        { title: "Data Analysis", description: "For insights and optimization." },
-        { title: "Integration with Payment Systems", description: "For secure and efficient transactions." },
-      ],
-    },
-  ];
+  const sections = t("about.sections", { returnObjects: true });
 
   return (
     <section className="body">
-      {/* <div className="profile">
-        <img src={profileImage} alt="Profile" className="profile-image" />
-      </div> */}
-
       <div className="title" ref={aboutTitleRef} style={{ fontFamily: "Lato, sans-serif" }}>
-        <h1 className="about_us">About Us</h1>
+        <h1 className="about_us">{t("about.title")}</h1>
       </div>
 
-      {sections.map((section, index) => (
-        <ContentBox key={index} title={section.title} content={section.content} />
+      {Object.entries(sections).map(([sectionTitle, items], index) => (
+        <ContentBox key={index} title={sectionTitle} content={items} />
       ))}
 
       <div className="tech-icons" ref={techIconsRef}>
         <h2 className="tech-title" style={{ fontFamily: "Lato, sans-serif" }}>
-          Technologies We Use
+          {t("about.technologies")}
         </h2>
         <div className="icons-container">
           <GoogleIcon fontSize="large" className="tech-material-icon" titleAccess="Google" />

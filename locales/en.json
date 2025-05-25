@@ -1,0 +1,114 @@
+{
+    "navbar": {
+      "about": "About Us",
+      "solutions": "Solutions",
+      "plans": "Our Plans",
+      "contact": "Contact Us"
+    },
+    "hero": {
+      "title": "All-in-one AI Conversational Platform for",
+      "highlight": "Businesses",
+      "subtitle": "Engagement, automation, and intelligence in every customer interaction — powered by conversational AI.",
+      "viewSolutions": "View Solutions",
+      "contact": "Contact Us"
+    },
+    "main1": {
+      "title": "Smartialab: AI Solutions for Business Growth",
+      "paragraph1": "At Smartialab, we harness the power of Artificial Intelligence to transform the way businesses interact with their customers. Our intelligent agents provide personalized recommendations, seamless interactions, and valuable business insights, optimizing marketing strategies and improving customer experiences.",
+      "paragraph2": "By leveraging Natural Language Processing (NLP), Data Analytics, and AI-driven automation, we help businesses enhance efficiency, drive engagement, and scale globally. Whether you're a small business or a large enterprise, Smartialab empowers you with the technology needed to stay ahead in the digital market."
+    },
+    "solutions": {
+      "title": "Solutions",
+      "customers": "Our Customers",
+      "items": [
+        {
+          "title": "Interaction",
+          "text": "The chatbot provides a friendly and natural conversational interface, allowing users to ask about products, explore different categories, and receive recommendations based on their preferences and shopping habits."
+        },
+        {
+          "title": "Data Generation through Interaction",
+          "text": "The chatbot analyzes users, questions and answers, preferences, and shopping patterns. This data will be used to improve recommendations, offer more suitable products, and generate consumption profiles for partner businesses."
+        },
+        {
+          "title": "Promotions",
+          "text": "Partner businesses will be able to launch promotional campaigns through the chatbot. The promotions will be personalized and presented based on the users’ previous interests and shopping behaviors, maximizing the likelihood of conversion."
+        },
+        {
+          "title": "Personalized Recommendations",
+          "text": "Based on interaction and purchase history, the chatbot offers specific product recommendations that might interest the user. These recommendations will be optimized through an artificial intelligence system that learns from each interaction."
+        }
+      ]
+    },
+    "about": {
+      "title": "About Us",
+      "technologies": "Technologies We Use",
+      "sections": {
+        "Competitive Advantages": [
+          {
+            "title": "Personalized Experience",
+            "description": "The agent learns from interactions to provide tailored recommendations and promotions for each customer."
+          },
+          {
+            "title": "Ease of Use",
+            "description": "Simplifies the purchase process, making it faster and more accessible."
+          },
+          {
+            "title": "Value for Businesses",
+            "description": "Optimizes marketing strategies, pricing, and provides valuable customer insights."
+          }
+        ],
+        "Growth Strategy": [
+          {
+            "title": "Onboarding New Businesses",
+            "description": "Partnering with small businesses initially and later with large brands to expand the product offering."
+          },
+          {
+            "title": "Targeted Marketing Campaigns",
+            "description": "Segmented advertising based on user behavior data."
+          },
+          {
+            "title": "International Expansion",
+            "description": "After consolidating in the local market, adapt to growing international ecommerce markets."
+          }
+        ],
+        "Required Technologies": [
+          {
+            "title": "Artificial Intelligence",
+            "description": "For personalization."
+          },
+          {
+            "title": "Natural Language Processing (NLP)",
+            "description": "For seamless interactions."
+          },
+          {
+            "title": "Data Analysis",
+            "description": "For insights and optimization."
+          },
+          {
+            "title": "Integration with Payment Systems",
+            "description": "For secure and efficient transactions."
+          }
+        ]
+      }
+    },
+    "footer": {
+      "about": "About Us",
+      "aboutText": "Empowering businesses with intelligent automation. Experts in Chatbots, Artificial Intelligence, and creating personalized customer experiences.",
+      "follow": "Follow Us",
+      "contact": "Contact Us",
+      "email": "Email",
+      "phone": "Phone",
+      "rights": "All Rights Reserved."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "message": "Your Message",
+      "send": "Send Message",
+      "success": "Message sent successfully",
+      "error": "Error sending message"
+    }
+  }
+  

@@ -1,111 +1,138 @@
-/* === Navbar === */
+/* === NAVBAR PRINCIPAL === */
 .navbar {
-    background-color:#5b45d9; /* fondo traslúcido */
-    backdrop-filter: blur(10px);
-    height: 100px; /* altura fija */
-    padding: 0 2rem;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  /* === Container dentro del navbar === */
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-  }
-  
-  /* === Logo === */
-  .logo-img {
-    max-height: 180px; /* se ajusta al alto del navbar */
-    width: auto;
-  }
-  
-  .logo-link {
-    display: flex;
-    align-items: center;
-  }
-  
-  /* === Enlaces de navegación === */
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-links li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: all 0.3s ease;
-    border-radius: 8px;
-  }
-  
-  .nav-links li a:hover {
-    background-color: #fff;
-    color: #000;
-  }
-  
-  /* === Botón hamburguesa === */
+  background-color: #5b45d9;
+  backdrop-filter: blur(10px);
+  height: 100px;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* === CONTENEDOR INTERIOR === */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* === LOGO === */
+.logo-img {
+  max-height: 180px;
+  width: auto;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+/* === LINKS DE NAVEGACIÓN === */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.nav-links li a:hover {
+  background-color: #fff;
+  color: #5b45d9;
+}
+
+/* === BOTÓN HAMBURGUESA === */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* === SELECTOR DE IDIOMA === */
+.lang-buttons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.lang-btn {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+  background-color: #fff;
+  color: #5b45d9;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
   .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
     display: none;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
+    padding: 1rem;
+    gap: 1rem;
+    border-top: 1px solid #333;
   }
-  
-  /* === Responsive === */
-  @media (max-width: 768px) {
-    .menu-toggle {
-      display: block;
-    }
-  
-    .nav-links {
-      position: absolute;
-      top: 80px;
-      right: 0;
-      background-color: rgba(0, 0, 0, 0.85);
-      flex-direction: column;
-      align-items: flex-start;
-      width: 100%;
-      display: none;
-      padding: 1rem;
-      gap: 1rem;
-      border-top: 1px solid #333;
-    }
-  
-    .nav-links.open {
-      display: flex;
-    }
-  
-    .nav-links li {
-      width: 100%;
-    }
-  
-    .nav-links li a {
-      display: block;
-      width: 100%;
-    }
-  
-    .logo-img {
-      max-height: 130px;
-    }
+
+  .nav-links.open {
+    display: flex;
   }
-  
-  body {
-    margin: 0;
-    padding-top: 80px;
+
+  .nav-links li {
+    width: 100%;
   }
-  
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+  }
+
+  .logo-img {
+    max-height: 130px;
+  }
+
+  .lang-buttons {
+    justify-content: flex-start;
+  }
+}
+
+/* === AJUSTES GLOBALES === */
+body {
+  margin: 0;
+  padding-top: 100px; /* espacio para navbar fija */
+}
