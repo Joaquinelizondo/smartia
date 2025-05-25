@@ -15,7 +15,8 @@ const plans = [
   },
   {
     title: "SmartIA Plus",
-    description: "Designed for shops, medical centers, and SMEs looking to automate customer service",
+    description:
+      "Designed for shops, medical centers, and SMEs looking to automate customer service",
     items: [
       "Up to 2,000 monthly sessions",
       "Web + WhatsApp integration",
@@ -28,7 +29,8 @@ const plans = [
   },
   {
     title: "SmartIA Ultra",
-    description: "Designed for companies with high demand for inquiries or 24/7 service",
+    description:
+      "Designed for companies with high demand for inquiries or 24/7 service",
     items: [
       "Up to 10,000 monthly sessions",
       "Integrations with CRMs, ERPs, or ecommerce",
@@ -60,7 +62,7 @@ const Plans = () => {
       <h1 className="plans-title">Our Plans</h1>
       <div className="plans-container">
         {plans.map((plan, index) => (
-          <div key={index} className="plan-card">
+          <div key={index} className={`plan-card plan-${index}`}>
             <div className="plan-icon">{plan.icon}</div>
             <h2 className="plan-title">{plan.title}</h2>
             <p className="plan-description">{plan.description}</p>
