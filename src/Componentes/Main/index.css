@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
 .solutions-container {
+  font-family: 'Orbitron', sans-serif;
   text-align: center;
   background-color: #f8f9fa;
   padding: 40px 5vw;
@@ -6,11 +16,13 @@
 
 h2 {
   font-size: 2.5rem;
+  font-family: 'Orbitron', sans-serif;
   color:  #5b45d9;
   margin-bottom: 30px;
 }
 
 .solutions-grid {
+  font-family: 'Orbitron', sans-serif;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
@@ -19,6 +31,7 @@ h2 {
 
 .solution-box {
   background: white;
+  font-family: 'Orbitron', sans-serif;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -34,17 +47,20 @@ h2 {
 
 .solution-box h5 {
   font-size: 1.5rem;
+  font-family: 'Orbitron', sans-serif;
   color: #007bff;
   margin-bottom: 10px;
 }
 
 .solution-box p {
+  font-family: 'Orbitron', sans-serif;
   font-size: 1rem;
   color: #555;
 }
 
 /* 🔹 Estilos para la sección Our Customers */
 .customer-box {
+  font-family: 'Orbitron', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,6 +92,7 @@ h2 {
 
   h2 {
     font-size: 2rem;
+    font-family: 'Orbitron', sans-serif;
   }
 
   .solution-box {
@@ -102,13 +119,16 @@ h2 {
 
   h2 {
     font-size: 1.8rem;
+    font-family: 'Orbitron', sans-serif;
   }
 
   .solution-box h5 {
     font-size: 1.3rem;
+    font-family: 'Orbitron', sans-serif;
   }
 
   .solution-box p {
     font-size: 0.9rem;
+    font-family: 'Orbitron', sans-serif;
   }
 }

@@ -1,114 +1,149 @@
 {
-    "navbar": {
-      "about": "Sobre Nosotros",
-      "solutions": "Soluciones",
-      "plans": "Planes",
-      "contact": "Contáctanos"
-    },
-    "hero": {
-      "title": "Plataforma Conversacional de IA todo en uno para",
-      "highlight": "Empresas",
-      "subtitle": "Engagement, automatización e inteligencia en cada interacción con el cliente — impulsado por IA conversacional.",
-      "viewSolutions": "Ver soluciones",
-      "contact": "Contáctanos"
-    },
-    "main1": {
-      "title": "Smartialab: Soluciones de IA para el crecimiento empresarial",
-      "paragraph1": "En Smartialab, aprovechamos el poder de la Inteligencia Artificial para transformar la forma en que las empresas interactúan con sus clientes. Nuestros agentes inteligentes brindan recomendaciones personalizadas, interacciones fluidas y valiosos conocimientos de negocio, optimizando las estrategias de marketing y mejorando la experiencia del cliente.",
-      "paragraph2": "Mediante el uso de procesamiento de lenguaje natural (NLP), análisis de datos y automatización impulsada por IA, ayudamos a las empresas a mejorar su eficiencia, aumentar el engagement y escalar globalmente. Ya sea una pequeña empresa o una gran corporación, Smartialab te brinda la tecnología necesaria para liderar el mercado digital."
-    },
-    "solutions": {
-      "title": "Soluciones",
-      "customers": "Nuestros Clientes",
-      "items": [
+  "navbar": {
+    "about": "Nosotros",
+    "solutions": "Soluciones",
+    "plans": "Planes",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Plataforma conversacional con IA todo en uno para",
+    "highlight": "Empresas",
+    "subtitle": "Interacción, automatización e inteligencia en cada contacto con el cliente — impulsado por IA conversacional.",
+    "viewSolutions": "Ver soluciones",
+    "contact": "Contáctanos"
+  },
+  "main1": {
+    "title": "Smartialab: Soluciones de IA para el crecimiento empresarial",
+    "paragraph1": "En Smartialab, aprovechamos el poder de la Inteligencia Artificial para transformar la forma en que las empresas interactúan con sus clientes. Nuestros agentes inteligentes brindan recomendaciones personalizadas, interacciones fluidas y análisis de datos útiles para mejorar estrategias de marketing y experiencias del cliente.",
+    "paragraph2": "A través del Procesamiento del Lenguaje Natural (PLN), analítica de datos y automatización basada en IA, ayudamos a las empresas a mejorar su eficiencia, aumentar la interacción y escalar globalmente. Ya sea que seas una pyme o una gran empresa, Smartialab te da la tecnología para liderar el mercado digital."
+  },
+  "solutions": {
+    "title": "Soluciones",
+    "customers": "Nuestros Clientes",
+    "items": [
+      {
+        "title": "Interacción",
+        "text": "El chatbot ofrece una interfaz conversacional amigable y natural, permitiendo a los usuarios consultar productos, explorar categorías y recibir recomendaciones según sus preferencias y hábitos de compra."
+      },
+      {
+        "title": "Generación de Datos por Interacción",
+        "text": "El chatbot analiza usuarios, preguntas y respuestas, preferencias y patrones de compra. Estos datos se usarán para mejorar recomendaciones, ofrecer productos más adecuados y generar perfiles de consumo para negocios aliados."
+      },
+      {
+        "title": "Promociones",
+        "text": "Los negocios aliados podrán lanzar campañas promocionales a través del chatbot. Las promociones serán personalizadas y presentadas según los intereses y comportamientos de compra previos de los usuarios, maximizando la conversión."
+      },
+      {
+        "title": "Recomendaciones Personalizadas",
+        "text": "Basado en la interacción y el historial de compras, el chatbot ofrece recomendaciones de productos específicas que pueden interesar al usuario. Estas se optimizarán gracias a un sistema de inteligencia artificial que aprende con cada interacción."
+      }
+    ]
+  },
+  "about": {
+    "title": "Nosotros",
+    "technologies": "Tecnologías que Usamos",
+    "sections": {
+      "Ventajas Competitivas": [
         {
-          "title": "Interacción",
-          "text": "El chatbot proporciona una interfaz conversacional amigable y natural, permitiendo a los usuarios preguntar por productos, explorar categorías y recibir recomendaciones personalizadas según sus preferencias y hábitos de compra."
+          "title": "Experiencia Personalizada",
+          "description": "El agente aprende de cada interacción para brindar recomendaciones y promociones personalizadas a cada cliente."
         },
         {
-          "title": "Generación de Datos mediante Interacción",
-          "text": "El chatbot analiza usuarios, preguntas y respuestas, preferencias y patrones de compra. Esta información se usará para mejorar las recomendaciones, ofrecer productos más adecuados y generar perfiles de consumo para los negocios aliados."
+          "title": "Facilidad de Uso",
+          "description": "Simplifica el proceso de compra, haciéndolo más rápido y accesible."
         },
         {
-          "title": "Promociones",
-          "text": "Los negocios aliados podrán lanzar campañas promocionales a través del chatbot. Las promociones serán personalizadas y presentadas según los intereses y comportamientos anteriores de los usuarios, maximizando la conversión."
+          "title": "Valor para los Negocios",
+          "description": "Optimiza estrategias de marketing, precios y brinda información valiosa del cliente."
+        }
+      ],
+      "Tecnologías Requeridas": [
+        {
+          "title": "Inteligencia Artificial",
+          "description": "Para personalización."
         },
         {
-          "title": "Recomendaciones Personalizadas",
-          "text": "Basado en la interacción y el historial de compras, el chatbot ofrece recomendaciones específicas que podrían interesar al usuario. Estas recomendaciones se optimizarán mediante un sistema de inteligencia artificial que aprende de cada interacción."
+          "title": "Procesamiento del Lenguaje Natural (PLN)",
+          "description": "Para interacciones fluidas."
+        },
+        {
+          "title": "Análisis de Datos",
+          "description": "Para obtener información valiosa y optimizar."
+        },
+        {
+          "title": "Integración con Sistemas de Pago",
+          "description": "Para transacciones seguras y eficientes."
         }
       ]
-    },
-    "about": {
-      "title": "Sobre Nosotros",
-      "technologies": "Tecnologías que usamos",
-      "sections": {
-        "Ventajas Competitivas": [
-          {
-            "title": "Experiencia Personalizada",
-            "description": "El agente aprende de las interacciones para brindar recomendaciones y promociones personalizadas."
-          },
-          {
-            "title": "Facilidad de Uso",
-            "description": "Simplifica el proceso de compra, haciéndolo más rápido y accesible."
-          },
-          {
-            "title": "Valor para los Negocios",
-            "description": "Optimiza estrategias de marketing, precios, y brinda información valiosa sobre los clientes."
-          }
-        ],
-        "Estrategia de Crecimiento": [
-          {
-            "title": "Incorporación de Nuevos Negocios",
-            "description": "Asociarse primero con pequeños negocios y luego con grandes marcas para ampliar la oferta."
-          },
-          {
-            "title": "Campañas de Marketing Segmentadas",
-            "description": "Publicidad segmentada según datos de comportamiento del usuario."
-          },
-          {
-            "title": "Expansión Internacional",
-            "description": "Tras consolidarse localmente, adaptarse a mercados internacionales en crecimiento."
-          }
-        ],
-        "Tecnologías Requeridas": [
-          {
-            "title": "Inteligencia Artificial",
-            "description": "Para personalización."
-          },
-          {
-            "title": "Procesamiento de Lenguaje Natural (NLP)",
-            "description": "Para interacciones fluidas."
-          },
-          {
-            "title": "Análisis de Datos",
-            "description": "Para insights y optimización."
-          },
-          {
-            "title": "Integración con Sistemas de Pago",
-            "description": "Para transacciones seguras y eficientes."
-          }
-        ]
-      }
-    },
-    "footer": {
-      "about": "Sobre Nosotros",
-      "aboutText": "Impulsamos negocios con automatización inteligente. Expertos en chatbots, inteligencia artificial y experiencias personalizadas para el cliente.",
-      "follow": "Síguenos",
-      "contact": "Contáctanos",
-      "email": "Correo",
-      "phone": "Teléfono",
-      "rights": "Todos los derechos reservados."
-    },
-    "contact": {
-      "title": "Contáctanos",
-      "name": "Nombre completo",
-      "email": "Correo electrónico",
-      "phone": "Número de teléfono",
-      "message": "Tu mensaje",
-      "send": "Enviar mensaje",
-      "success": "Mensaje enviado correctamente",
-      "error": "Error al enviar el mensaje"
     }
+  },
+  "plans": {
+    "title": "Nuestros Planes",
+    "button": "Lo quiero",
+    "basic": {
+      "title": "SmartIA Básico",
+      "description": "Ideal para emprendedores o equipos que inician con un agente",
+      "items": [
+        "Hasta 500 sesiones mensuales",
+        "1 canal de integración (web o WhatsApp)",
+        "Diseño de hasta 5 preguntas frecuentes",
+        "Soporte por correo o WhatsApp"
+      ]
+    },
+    "plus": {
+      "title": "SmartIA Plus",
+      "description": "Diseñado para tiendas, centros médicos y pymes que desean automatizar la atención al cliente",
+      "items": [
+        "Hasta 2.000 sesiones mensuales",
+        "Integración web + WhatsApp",
+        "Respuestas automáticas",
+        "Captura de datos",
+        "Personalización de hasta 5 flujos",
+        "Soporte por correo o WhatsApp"
+      ]
+    },
+    "ultra": {
+      "title": "SmartIA Ultra",
+      "description": "Pensado para empresas con alta demanda de consultas o atención 24/7",
+      "items": [
+        "Hasta 10.000 sesiones mensuales",
+        "Integraciones con CRMs, ERPs o ecommerce",
+        "Respuestas automáticas personalizadas ilimitadas",
+        "Flujos avanzados",
+        "Captura de datos",
+        "Soporte personalizado",
+        "Panel de métricas"
+      ]
+    },
+    "business": {
+      "title": "SmartIA Business",
+      "description": "Solución a medida para empresas que buscan un desarrollo ilimitado",
+      "items": [
+        "Sesiones mensuales ilimitadas",
+        "Integraciones personalizadas según necesidad",
+        "Automatización de respuestas ilimitada",
+        "Desarrollo de flujos totalmente personalizados",
+        "Soporte premium 24/7"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "name": "Nombre completo",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "message": "Tu mensaje",
+    "send": "Enviar mensaje",
+    "success": "Mensaje enviado correctamente",
+    "error": "Error al enviar el mensaje"
+  },
+  "footer": {
+    "about": "Nosotros",
+    "aboutText": "Impulsamos negocios con automatización inteligente. Expertos en chatbots, IA y experiencias personalizadas para el cliente.",
+    "follow": "Síguenos",
+    "contact": "Contáctanos",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "rights": "Todos los derechos reservados."
   }
-  
+}

@@ -1,93 +1,89 @@
-/* 🔹 Contenedor principal con mayor separación */
-.main1-container {
-  margin: 100px auto; /* 🔥 Más separación arriba y abajo */
-  padding: 50px 20px;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+.main1-wrapper-modern {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #eef1ff 0%, #d6e1ff 100%);
-  border-radius: 10px;
-  gap: 50px; /* 🔥 Más espacio entre la imagen y el texto */
-  max-width: 1000px;
   flex-wrap: wrap;
-}
-
-/* 🔹 Contenedor de la imagen */
-.image-container {
-  display: flex;
   justify-content: center;
-  align-items: center;
-  max-width: 100%;
+  align-items: flex-start;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #0f0f1a, #1c1c2e);
+  font-family: 'Orbitron', sans-serif;
+  gap: 40px;
 }
 
-/* 🔹 Contenedor que mantiene la imagen redonda con borde difuminado */
-.image-wrapper {
-  width: 160px; /* 🔥 Tamaño fijo */
-  height: 160px;
+.main1-content-box {
+  flex: 1 1 600px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 249, 255, 0.3);
+  border-left: 5px solid #00f9ff;
+  border-radius: 12px;
+  padding: 40px 30px;
+  color: #f0f0f0;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.main1-content-box.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.main1-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.main1-avatar {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white; /* 🔥 Evita bordes oscuros */
-  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7); /* 🔥 Efecto difuminado más fuerte */
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 249, 255, 0.4);
 }
 
-/* 🔹 Imagen dentro del contenedor */
-.image-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* 🔥 Asegura que la imagen se ajuste sin deformarse */
-  border-radius: 50%; /* 🔥 Hace la imagen completamente redonda */
-}
-
-/* 🔹 Contenedor del texto con más separación */
-.text-container {
-  flex: 2;
-  padding: 30px;
-  max-width: 600px;
-  color: #6c8cff;
-  text-align: left;
-  text-align: center;
-}
-
-/* 🔹 Títulos y textos */
-.title_main1 {
+.main1-title {
   font-size: 2rem;
+  font-weight: 700;
+  color: #00f9ff;
+}
+
+.main1-paragraph {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #b0b0ff;
   margin-bottom: 20px;
 }
 
-.text_main1 {
-  font-size: 1.1rem;
-  line-height: 1.8;
+.main1-floating-img {
+  flex: 0 1 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: float 3s ease-in-out infinite;
 }
 
-/* 🔹 Responsividad para móviles */
+.main1-floating-img img {
+  max-height: 300px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px #00f9ff99);
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
 @media (max-width: 768px) {
-  .main1-container {
+  .main1-top {
     flex-direction: column;
     text-align: center;
-    gap: 40px; /* 🔥 Más espacio en móviles */
-    text-align: center;
   }
 
-  .image-wrapper {
-    width: 140px; /* 🔥 Tamaño más pequeño en móviles */
-    height: 140px;
-  }
-
-  .text-container {
-    max-width: 90%;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .title_main1 {
-    font-size: 1.8rem;
-  }
-
-  .text_main1 {
-    font-size: 1rem;
+  .main1-floating-img {
+    margin-top: 30px;
   }
 }

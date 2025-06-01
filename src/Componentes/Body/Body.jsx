@@ -55,9 +55,9 @@ const ContentBox = ({ title, content }) => {
   return (
     <div className="body1" id="about">
       <div className="content-box" ref={ref} style={{ fontFamily: "Lato, sans-serif" }}>
-        <div className="icon-container">
+        {/* <div className="icon-container">
           <img src={icono} alt="Icon" className="icon-inside-box" />
-        </div>
+        </div> */}
 
         <h2 className="section-title">{title}</h2>
         <ul className="spaced-list">
@@ -93,7 +93,7 @@ const Body = () => {
       ))}
 
       <div className="tech-icons" ref={techIconsRef}>
-        <h2 className="tech-title" style={{ fontFamily: "Lato, sans-serif" }}>
+        <h2 className="tech-title" style={{ fontFamily: "'Orbitron', sans-serif" }}>
           {t("about.technologies")}
         </h2>
         <div className="icons-container">

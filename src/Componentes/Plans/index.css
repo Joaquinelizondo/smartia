@@ -1,7 +1,7 @@
 .plans-wrapper {
   text-align: center;
   padding: 40px 20px;
-  background-color: rgb(55, 55, 116);
+  background-color: #0f0f1a;
 }
 
 .plans-title {
@@ -25,11 +25,19 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   border: 5px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 430px;
   transition: transform 0.3s;
 }
 
 .plan-card:hover {
   transform: scale(1.03);
+}
+
+.plan-content {
+  flex-grow: 1;
 }
 
 .plan-icon {
@@ -40,6 +48,10 @@
 .plan-title {
   font-size: 22px;
   margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: white; /* Fondo blanco */
+  display: inline-block;
+  border-radius: 4px;
 }
 
 .plan-description {
@@ -60,13 +72,36 @@
   color: #333;
 }
 
-/* Estilos personalizados por tarjeta */
+.plan-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  color: white;
+  align-self: center;
+}
+
+/* Hover para todos */
+.plan-button:hover {
+  opacity: 0.85;
+}
+
+/* Planes personalizados */
 .plan-0 {
   border-color: #FFD700; /* Amarillo */
 }
 
 .plan-0 .plan-title {
-  color: #FFD700; /* Amarillo */
+  color: #FFD700;
+}
+
+.plan-0 .plan-button {
+  background-color: #FFD700;
+  color: white;
 }
 
 .plan-1 {
@@ -74,7 +109,12 @@
 }
 
 .plan-1 .plan-title {
-  color: #DAA520; /* Dorado */
+  color: #DAA520;
+}
+
+.plan-1 .plan-button {
+  background-color: #DAA520;
+  color: white;
 }
 
 .plan-2 {
@@ -82,7 +122,12 @@
 }
 
 .plan-2 .plan-title {
-  color: #C0C0C0; /* Plateado */
+  color: #C0C0C0;
+}
+
+.plan-2 .plan-button {
+  background-color: #C0C0C0;
+  color: white;
 }
 
 .plan-3 {
@@ -90,5 +135,10 @@
 }
 
 .plan-3 .plan-title {
-  color: #000000; /* Negro */
+  color: #000000;
+}
+
+.plan-3 .plan-button {
+  background-color: #000000;
+  color: white;
 }

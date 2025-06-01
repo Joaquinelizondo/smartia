@@ -9,7 +9,7 @@ const Main = () => {
   const solutions = t("solutions.items", { returnObjects: true });
 
   const customers = [
-    { name: "Eco", logo: ecoLogo, url: "https://www.eco.com" },
+    { name: "Eco", logo: ecoLogo, url: "https://www.ecobombilla.cl" },
   ];
 
   return (

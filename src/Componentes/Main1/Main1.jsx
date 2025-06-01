@@ -1,25 +1,25 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import "./index.css";
-import fotoMain from "/src/assets/fotom.jpeg";
+import "./index.css"; // Cambia el import al nuevo estilo
+import fotoMain from "/src/assets/icon3.jpg";
+import fotoSide from "/src/assets/icon4.png";
 
 const Main1 = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="main1-container">
-      {/* 📌 Imagen con borde difuminado */}
-      <div className="image-container">
-        <div className="image-wrapper">
-          <img src={fotoMain} alt="Smartialab AI Solutions" />
+    <div className="main1-wrapper-modern">
+      <div className="main1-content-box fade-in">
+        <div className="main1-top">
+          <img src={fotoMain} alt="Smartialab AI Solutions" className="main1-avatar" />
+          <h2 className="main1-title">{t("main1.title")}</h2>
         </div>
+        <p className="main1-paragraph">{t("main1.paragraph1")}</p>
+        <p className="main1-paragraph">{t("main1.paragraph2")}</p>
       </div>
 
-      {/* 📌 Contenedor del texto */}
-      <div className="text-container">
-        <h2 className="title_main1">{t("main1.title")}</h2>
-        <p className="text_main1">{t("main1.paragraph1")}</p>
-        <p className="text_main1">{t("main1.paragraph2")}</p>
+      <div className="main1-floating-img">
+        <img src={fotoSide} alt="AI Concept" loading="lazy" />
       </div>
     </div>
   );
