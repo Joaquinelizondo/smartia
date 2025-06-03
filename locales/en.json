@@ -40,39 +40,39 @@
     ]
   },
   "about": {
-    "title": "About Us",
-    "technologies": "Technologies We Use",
+    "title": "Smart Agents for Your Business",
+    "technologies": "Technologies Behind Our Service",
     "sections": {
-      "Competitive Advantages": [
+      "Why Choose Our AI Agents?": [
         {
-          "title": "Personalized Experience",
-          "description": "The agent learns from interactions to provide tailored recommendations and promotions for each customer."
+          "title": "Tailored for Your Clients",
+          "description": "Our smart agents learn from every interaction to offer personalized suggestions and promotions that increase engagement and loyalty."
         },
         {
-          "title": "Ease of Use",
-          "description": "Simplifies the purchase process, making it faster and more accessible."
+          "title": "Simple and Intuitive",
+          "description": "Your customers enjoy a smooth, effortless buying experience—just like chatting with a friend."
         },
         {
-          "title": "Value for Businesses",
-          "description": "Optimizes marketing strategies, pricing, and provides valuable customer insights."
+          "title": "Business-Driven Results",
+          "description": "Make smarter decisions with actionable insights, boost conversions, and optimize your strategies in real-time."
         }
       ],
-      "Required Technologies": [
+      "How Does It Work?": [
         {
           "title": "Artificial Intelligence",
-          "description": "For personalization."
+          "description": "Drives personalized customer interactions."
         },
         {
-          "title": "Natural Language Processing (NLP)",
-          "description": "For seamless interactions."
+          "title": "Natural Language Understanding",
+          "description": "Allows the agent to communicate naturally and fluently."
         },
         {
-          "title": "Data Analysis",
-          "description": "For insights and optimization."
+          "title": "Advanced Analytics",
+          "description": "Reveals patterns to improve performance and user satisfaction."
         },
         {
-          "title": "Integration with Payment Systems",
-          "description": "For secure and efficient transactions."
+          "title": "Secure Payment Integrations",
+          "description": "Enable seamless and safe transactions directly through the chatbot."
         }
       ]
     }

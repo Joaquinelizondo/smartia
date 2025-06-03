@@ -40,39 +40,39 @@
     ]
   },
   "about": {
-    "title": "Nosotros",
+    "title": "Agentes Inteligentes para tu Negocio",
     "technologies": "Tecnologías que Usamos",
     "sections": {
-      "Ventajas Competitivas": [
+      "¿Por qué elegir nuestros agentes de IA?": [
         {
-          "title": "Experiencia Personalizada",
-          "description": "El agente aprende de cada interacción para brindar recomendaciones y promociones personalizadas a cada cliente."
+          "title": "Adaptados a tus clientes",
+          "description": "Nuestros agentes inteligentes aprenden de cada interacción para ofrecer recomendaciones y promociones personalizadas que aumentan el compromiso y la fidelización."
         },
         {
-          "title": "Facilidad de Uso",
-          "description": "Simplifica el proceso de compra, haciéndolo más rápido y accesible."
+          "title": "Sencillo e intuitivo",
+          "description": "Tus clientes disfrutan de una experiencia de compra fluida y sin esfuerzo, como si hablaran con un asistente real."
         },
         {
-          "title": "Valor para los Negocios",
-          "description": "Optimiza estrategias de marketing, precios y brinda información valiosa del cliente."
+          "title": "Resultados para tu negocio",
+          "description": "Tomá decisiones más inteligentes con insights accionables, aumentá conversiones y optimizá tus estrategias en tiempo real."
         }
       ],
-      "Tecnologías Requeridas": [
+      "¿Cómo funciona?": [
         {
           "title": "Inteligencia Artificial",
-          "description": "Para personalización."
+          "description": "Impulsa interacciones personalizadas con tus clientes."
         },
         {
-          "title": "Procesamiento del Lenguaje Natural (PLN)",
-          "description": "Para interacciones fluidas."
+          "title": "Comprensión del Lenguaje Natural",
+          "description": "Permite al agente comunicarse de forma natural y fluida."
         },
         {
-          "title": "Análisis de Datos",
-          "description": "Para obtener información valiosa y optimizar."
+          "title": "Análisis Avanzado",
+          "description": "Revela patrones para mejorar el rendimiento y la experiencia del usuario."
         },
         {
-          "title": "Integración con Sistemas de Pago",
-          "description": "Para transacciones seguras y eficientes."
+          "title": "Integración con Pagos Seguros",
+          "description": "Permite realizar transacciones seguras directamente desde el chatbot."
         }
       ]
     }

@@ -1,97 +1,145 @@
+/* index.css */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background: linear-gradient(135deg, #0f0f1a, #1c1c2e);
+  color: #ffffff;
+}
 
 .body {
-  background: linear-gradient(135deg, #0f0f1a, #1c1c2e);
   min-height: 100vh;
   padding: 100px 20px;
   display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f0f1a, #1c1c2e);
+}
+
+.main-layout {
+  display: flex;
   flex-direction: column;
+  gap: 60px;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.row-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.content-box-wrapper {
+  flex: 1;
+  min-width: 300px;
+  max-width: 700px;
+}
+
+.video-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  font-family: 'Orbitron', sans-serif !important;
+  max-width: 600px;
+}
+
+.blurred-video {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 249, 255, 0.2);
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .title {
-  font-family: 'Orbitron', sans-serif !important;
-  text-align: center;
+  text-align: left;
   font-size: 2.8rem;
   font-weight: 700;
   color: #00f9ff;
-  margin-bottom: 50px;
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.6s ease, transform 0.6s ease;
+  max-width: 400px;
 }
 
 .title.fade-in {
   opacity: 1;
-  font-family: 'Orbitron', sans-serif;
   transform: translateY(0);
 }
 
-.body1 {
-  width: 100%;
-  max-width: 1200px;
-  margin-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  font-family: 'Orbitron', sans-serif;
-}
-
 .content-box {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(0, 249, 255, 0.3);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.02), rgba(0, 249, 255, 0.05));
+  border: 1px solid rgba(0, 249, 255, 0.15);
   border-left: 5px solid #00f9ff;
-  padding: 30px 20px;
+  padding: 30px 25px;
   border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 249, 255, 0.1);
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.6s ease, transform 0.6s ease;
-  color: #f0f0f0;
-  font-family: 'Orbitron', sans-serif;
 }
 
 .content-box.fade-in {
   opacity: 1;
   transform: translateY(0);
-  font-family: 'Orbitron', sans-serif;
 }
 
 .section-title {
   font-size: 1.8rem;
   color: #00f9ff;
   font-weight: bold;
-  margin-bottom: 20px;
-  text-align: left;
+  margin-bottom: 25px;
 }
 
 .spaced-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-family: 'Orbitron', sans-serif;
 }
 
 .list-item {
   margin-bottom: 20px;
-  padding: 10px 15px;
-  background: rgba(255, 255, 255, 0.03);
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.025);
+  border-left: 4px solid #00f9ff;
   border-radius: 8px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .list-title {
+  width: 35%;
   font-weight: 600;
   font-size: 1.1rem;
-  color: #ffffff;
-  font-family: 'Orbitron', sans-serif;
+  color: #00f9ff;
 }
 
 .list-description {
+  width: 65%;
   font-size: 1rem;
-  color: #b0b0ff;
-  margin-top: 4px;
+  color: #d0d0ff;
+  text-align: left;
 }
 
 .tech-icons {
@@ -125,12 +173,30 @@
   color: #ffffff;
 }
 
-@media (max-width: 768px) {
-  .body1 {
-    gap: 20px;
+@media (max-width: 1024px) {
+  .row-layout {
+    flex-direction: column;
+    align-items: center;
   }
-  .content-box {
-    padding: 20px;
+
+  .video-container {
+    order: 2;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .blurred-video {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .content-area,
+  .content-box-wrapper {
+    width: 100%;
+  }
+
+  .title {
+    text-align: center;
   }
 }
 
@@ -138,16 +204,29 @@
   .title {
     font-size: 2rem;
   }
+
   .section-title {
     font-size: 1.4rem;
   }
+
   .list-title {
     font-size: 1rem;
   }
+
   .list-description {
     font-size: 0.95rem;
   }
+
   .icons-container svg {
     font-size: 32px;
+  }
+
+  .list-item {
+    flex-direction: column;
+  }
+
+  .list-title,
+  .list-description {
+    width: 100%;
   }
 }
