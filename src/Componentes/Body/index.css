@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
-  background: linear-gradient(135deg, #0f0f1a, #1c1c2e);
+  background: linear-gradient( #0f0f1a);
   color: #ffffff;
 }
 
@@ -15,7 +15,7 @@ body {
   padding: 100px 20px;
   display: flex;
   justify-content: center;
-  background: linear-gradient(135deg, #0f0f1a, #1c1c2e);
+  background:  #0f0f1a;
 }
 
 .main-layout {
@@ -31,13 +31,20 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* ❗ evita que se rompa la fila */
 }
+
+.row-layout.video-row {
+  align-items: center; /* ✅ centra verticalmente el video con la caja */
+}
+
 
 .content-box-wrapper {
   flex: 1;
   min-width: 300px;
   max-width: 700px;
+  display: flex;
+  align-items: center;
 }
 
 .video-container {
@@ -46,6 +53,7 @@ body {
   justify-content: center;
   align-items: center;
   max-width: 600px;
+  height: 100%;
 }
 
 .blurred-video {
@@ -56,6 +64,7 @@ body {
   border-radius: 20px;
   box-shadow: 0 0 40px rgba(0, 249, 255, 0.2);
   animation: fadeIn 2s ease-in-out;
+  align-self: center;
 }
 
 @keyframes fadeIn {

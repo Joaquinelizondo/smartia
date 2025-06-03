@@ -17,8 +17,9 @@ import {
 import { FaFileExcel } from "react-icons/fa";
 import GoogleIcon from "@mui/icons-material/Google";
 
-// Ruta del video (en /public)
-const videoSrc = "src/assets/body_video.mp4";
+// Ruta del video (en src/assets)
+import videoSrc from "/src/assets/body_video.mp4";
+
 
 const useIntersectionFadeIn = (refs) => {
   useEffect(() => {
@@ -95,7 +96,7 @@ const Body = () => {
         </div>
 
         {/* Segunda fila: Video + segunda caja */}
-        <div className="row-layout">
+        <div className="row-layout video-row">
           <div className="video-container">
             <video
               className="blurred-video"
