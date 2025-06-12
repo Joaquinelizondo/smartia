@@ -1,7 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import "./index.css";
+import { FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
+
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -33,6 +34,13 @@ const Footer = () => {
             >
               <FaInstagram className="icon" />
             </a>
+            <a
+                href="https://x.com/smartialab"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTwitter className="icon" />
+              </a>
           </div>
         </div>
 

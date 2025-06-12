@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "./index.css";
-
+import muffin from "/src/assets/muffin.png";
 import ecoLogo from "/src/assets/eco.png";
 
 const Main = () => {
@@ -10,6 +10,7 @@ const Main = () => {
 
   const customers = [
     { name: "Eco", logo: ecoLogo, url: "https://www.ecobombilla.cl" },
+    { name: "Muffin", logo: muffin, url: "https://muffin.uy" },
   ];
 
   return (
@@ -28,20 +29,26 @@ const Main = () => {
       </div>
 
       {/* 🔹 Clientes */}
-      <div className="solutions-container">
+      <div className="solutions-container" id="customers">
         <h2>{t("solutions.customers")}</h2>
-        <div className="solutions-grid">
-          {customers.map((customer, index) => (
-            <a
-              key={index}
-              href={customer.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="customer-box"
-            >
-              <img src={customer.logo} alt={customer.name} className="customer-logo" />
-            </a>
-          ))}
+        <div className="customer-wrapper">
+          <div className="customer-logos">
+            {customers.map((customer, index) => (
+              <a
+                key={index}
+                href={customer.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="customer-box"
+              >
+                <img
+                  src={customer.logo}
+                  alt={customer.name}
+                  className="customer-logo"
+                />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </>

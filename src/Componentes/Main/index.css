@@ -6,23 +6,22 @@ body {
   padding: 0;
 }
 
-
 .solutions-container {
   font-family: 'Orbitron', sans-serif;
-  text-align: center;
   background-color: #f8f9fa;
   padding: 40px 5vw;
 }
 
-h2 {
+.solutions-container h2 {
   font-size: 2.5rem;
   font-family: 'Orbitron', sans-serif;
-  color:  #5b45d9;
+  color: #5b45d9;
   margin-bottom: 30px;
+  text-align: center;
 }
 
+/* Soluciones */
 .solutions-grid {
-  font-family: 'Orbitron', sans-serif;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
@@ -31,13 +30,11 @@ h2 {
 
 .solution-box {
   background: white;
-  font-family: 'Orbitron', sans-serif;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
 }
 
 .solution-box:hover {
@@ -47,20 +44,31 @@ h2 {
 
 .solution-box h5 {
   font-size: 1.5rem;
-  font-family: 'Orbitron', sans-serif;
   color: #007bff;
   margin-bottom: 10px;
 }
 
 .solution-box p {
-  font-family: 'Orbitron', sans-serif;
   font-size: 1rem;
   color: #555;
 }
 
-/* 🔹 Estilos para la sección Our Customers */
+/* 🔹 Contenedor alineado a la izquierda */
+.customer-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.customer-logos {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* 🔹 Caja de cliente */
 .customer-box {
-  font-family: 'Orbitron', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,7 +77,8 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 20%;
+  width: 150px;
+  height: 100px;
 }
 
 .customer-box:hover {
@@ -83,32 +92,22 @@ h2 {
   object-fit: contain;
 }
 
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .solutions-container {
     padding: 30px 3vw;
   }
 
-  h2 {
+  .solutions-container h2 {
     font-size: 2rem;
-    font-family: 'Orbitron', sans-serif;
   }
 
   .solution-box {
     padding: 15px;
   }
-}
 
-@media (max-width: 768px) {
   .customer-logo {
     width: 100px;
-  }
-}
-
-@media (max-width: 480px) {
-  .customer-logo {
-    width: 80px;
   }
 }
 
@@ -117,18 +116,19 @@ h2 {
     padding: 20px 2vw;
   }
 
-  h2 {
+  .solutions-container h2 {
     font-size: 1.8rem;
-    font-family: 'Orbitron', sans-serif;
   }
 
   .solution-box h5 {
     font-size: 1.3rem;
-    font-family: 'Orbitron', sans-serif;
   }
 
   .solution-box p {
     font-size: 0.9rem;
-    font-family: 'Orbitron', sans-serif;
+  }
+
+  .customer-logo {
+    width: 80px;
   }
 }
