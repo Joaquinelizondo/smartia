@@ -1,8 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "./index.css";
-import { FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
-
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -35,12 +34,21 @@ const Footer = () => {
               <FaInstagram className="icon" />
             </a>
             <a
-                href="https://x.com/smartialab"
-                target="_blank"
-                rel="noopener noreferrer"
+              href="https://x.com/smartialab"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 1227"
+                width="24"
+                height="24"
+                fill="currentColor"
               >
-                <FaTwitter className="icon" />
-              </a>
+                <path d="M939 0L582 490 228 0H0l426 620L0 1227h228l348-500 349 500h228L774 618 1200 0z" />
+              </svg>
+            </a>
           </div>
         </div>
 
